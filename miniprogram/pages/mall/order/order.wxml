@@ -13,52 +13,12 @@
         <text class="order-tit">订单明细</text>
         <text class="robot-box">机器人送货</text>
       </view>
-      <view class="order-list">
-        <image class="order-img" />
-        <view class="title-box">红豆麻薯千层抹茶吐司红豆麻薯千层抹茶吐司</view>
-        <text class="order-num">× 5</text>
-        <text class="pro-price">￥50</text>
-      </view>
+      <y-order-item />
       <view class="order-list">
         <image class="order-img" />
         <view class="title-box">红豆麻薯千层抹茶吐司</view>
         <text class="order-num">× 5</text>
         <text class="pro-price">￥50</text>
-      </view>
-      <view class="order-list">
-        <image class="order-img" />
-        <view class="title-box">红豆麻薯千层抹茶吐司</view>
-        <text class="order-num">× 5</text>
-        <text class="pro-price">￥50</text>
-      </view>
-      <view class="order-list">
-        <image class="order-img" />
-        <view class="title-box">红豆麻薯千层抹茶吐司</view>
-        <text class="order-num">× 5</text>
-        <text class="pro-price">￥50</text>
-      </view>
-      <view class="order-list">
-        <image class="order-img" />
-        <view class="title-box">红豆麻薯千层抹茶吐司</view>
-        <text class="order-num">× 5</text>
-        <text class="pro-price">￥50</text>
-      </view>
-      <view class="order-list">
-        <image class="order-img" />
-        <view class="title-box">红豆麻薯千层抹茶吐司</view>
-        <text class="order-num">× 5</text>
-        <text class="pro-price">￥50</text>
-      </view>
-      <view class="order-list">
-        <image class="order-img" />
-        <view class="title-box">红豆麻薯千层抹茶吐司</view>
-        <text class="order-num">× 5</text>
-        <text class="pro-price">￥50</text>
-      </view>
-      <view class="total-box">
-        <text class="price-num">200</text>
-        <text class="price-icon">￥</text>
-        <text class="price-tit">合计</text>      
       </view>
     </view>
 

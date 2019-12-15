@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "y-order-item": "/components/mall/order/orderItem/orderItem"
+  }
 }

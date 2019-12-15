@@ -1,1 +1,4 @@
 /* miniprogram/pages/mall/mallOrder/mallOrder.wxss */
+.van-tab__pane{
+  padding: 24rpx;
+}

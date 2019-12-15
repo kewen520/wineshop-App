@@ -1,0 +1,35 @@
+/* components/mall/order/orderItem/orderItem.wxss */
+
+.order-list {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 32rpx;
+  align-items: center;
+}
+
+.order-img {
+  width: 48px;
+  height: 48px;
+  background: #900;
+}
+
+.title-box {
+  font-size: 26rpx;
+  font-weight: bold;
+  width: calc(100% - 108px);
+  box-sizing: content-box;
+  padding-left: 20rpx;
+  line-height: 40rpx;
+}
+
+.order-num {
+  width: 30px;
+  text-align: left;
+  font-size: 26rpx;
+}
+
+.pro-price {
+  width: 30px;
+  text-align: left;
+  font-size: 28rpx;
+}
