@@ -1,1 +1,54 @@
 /* miniprogram/pages/mall/revAddress/revAddress.wxss */
+.page{
+  padding: 24rpx;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main{
+  width: 100%;
+  border-radius: 10rpx;
+  padding: 32rpx;
+  background: #fff;
+}
+.form-group{
+  height: 60rpx;
+  line-height: 60rpx; 
+  font-size: 28rpx;
+  color: #242631;
+  display: flex;
+  margin: 20rpx 0;
+}
+.label{
+  height: 60rpx;
+  line-height: 60rpx; 
+  width: 200rpx; 
+  font-size: 28rpx;
+  font-weight: normal;
+  font-family: PingFangSC-Medium;
+}
+.inp{  
+  font-size: 28rpx;
+  height: 60rpx;
+  line-height: 60rpx; 
+  font-family: PingFangSC-Medium;
+}
+.radio-group{
+  width: 400rpx;
+  display: flex;
+}
+.van-radio{
+  width: 140rpx;
+}
+.btn{
+  width: 100%;
+  height: 88rpx;
+  text-align: center;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  background: #FFA364;
+  color: #fff;
+  margin-top: 56rpx;
+  border-radius: 10rpx;
+}

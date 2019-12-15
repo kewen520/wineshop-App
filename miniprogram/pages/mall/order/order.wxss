@@ -47,7 +47,7 @@
 
 .main {
   flex: 1;
-  padding: 0 40rpx;
+  padding: 0 24rpx;
   overflow: hidden;
 }
 
@@ -61,7 +61,7 @@
 .order-list {
   display: flex;
   flex-direction: row;
-  padding: 20rpx 40rpx;
+  padding: 20rpx 32rpx;
   align-items: center;
 }
 
@@ -109,7 +109,7 @@
   font-size: 32rpx;
   color: #242631;
   font-weight: bolder;
-  padding-left: 40rpx;
+  padding-left: 32rpx;
 }
 
 .title-box {
@@ -140,7 +140,7 @@
   text-align: center;
   border-radius: 10rpx;
   border: 1rpx #ffa364 solid;
-  margin-right: 40rpx;
+  margin-right: 32rpx;
   color: #ffa364;
 }
 

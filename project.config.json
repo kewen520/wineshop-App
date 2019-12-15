@@ -262,6 +262,20 @@
 					"pathName": "pages/mall/mallOrder/mallOrder",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单",
+					"pathName": "pages/mall/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "修改地址",
+					"pathName": "pages/mall/revAddress/revAddress",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

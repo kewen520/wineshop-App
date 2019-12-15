@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    userName: "刘璐婕",
+    userPhone: "15658100319",
+    wineshopName: "世茂酒店",
+    roomNum: "B座608",
+    radio: '1'
   },
 
   /**
@@ -62,5 +66,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onChange(event) {
+    this.setData({
+      radio: event.detail
+    });
   }
 })

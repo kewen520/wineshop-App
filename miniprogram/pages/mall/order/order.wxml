@@ -15,7 +15,7 @@
       </view>
       <view class="order-list">
         <image class="order-img" />
-        <view class="title-box">红豆麻薯千层抹茶吐司</view>
+        <view class="title-box">红豆麻薯千层抹茶吐司红豆麻薯千层抹茶吐司</view>
         <text class="order-num">× 5</text>
         <text class="pro-price">￥50</text>
       </view>
