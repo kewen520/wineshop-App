@@ -1,0 +1,27 @@
+<!--miniprogram/pages/mall/home/home.wxml-->
+<view class="page">
+  <view class="top">
+    <view class="counter-name">
+      <image class="counter-name-icon" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/home/icon_location.png" />
+      <text class="counter-name-txt">新研大厦4号货柜</text>
+    </view>
+    <view class="shopping-cart">
+      <view class="cart-num">9</view>
+      <image class="shopping-cart-img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/home/icon_shopping-cart.png" />
+    </view>
+  </view>
+  <view class="mall-main">
+    <scroll-view class="shop-box-nav nav" scroll-y scroll-with-animation scroll-top="{{shopNavTop}}">
+      <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{list}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+        Tab-{{item.name}}-{{VerticalNavTop}}
+      </view>
+    </scroll-view>
+
+    <scroll-view class="shop-box-main" scroll-y scroll-with-animation scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+    <view class="shop-box-item padding-lr" wx:for="{{list}}" wx:key id="main-{{index}}">
+    Tab-{{item.name}}
+    </view>
+    </scroll-view>
+  
+  </view>
+</view>

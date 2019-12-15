@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "添加开票信息",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "van-cell-group": "/dist/cell-group/index",
+    "van-field": "/dist/field/index",
+    "van-button": "/dist/button/index"
+  }
+}

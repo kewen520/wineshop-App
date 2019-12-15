@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "y-stepper": "/components/mall/stepper/stepper",
+    "price-box": "/components/mall/priceBox/priceBox",
+    "van-button": "/dist/button/index"
+  }
+}

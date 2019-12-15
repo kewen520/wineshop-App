@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="user-cell">
+  <image class="user-avatar" src="{{userInfo.faceUrl}}" />
+  <text class="user-name">{{userInfo.name}}</text>
+  <button data-userid="{{userInfo.personId}}" class="user-cell-del-btn" bindtap="delUser">
+  </button>
+</view>

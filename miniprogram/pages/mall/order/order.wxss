@@ -1,0 +1,155 @@
+/* miniprogram/pages/mall/order/order.wxss */
+
+.page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  height: 140rpx;
+  width: 100%;
+  padding: 20rpx 40rpx;
+}
+
+.cupboard-name {
+  flex: 1;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.cupboard-name-txt {
+  display: inline-block;
+  color: #bdbec0;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+}
+
+.cupboard-name-icon {
+  width: 48rpx;
+  height: 48rpx;
+  display: inline-block;
+  float: left;
+  margin-top: 6rpx;
+  margin-right: 10rpx;
+}
+
+.user-info {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 28rpx;
+  color: #a5a6a8;
+  padding: 10rpx 0 10rpx 58rpx;
+}
+
+.main {
+  flex: 1;
+  padding: 0 40rpx;
+  overflow: hidden;
+}
+
+.order-list-box, .pay-type {
+  width: 100%;
+  display: block;
+  border-radius: 10rpx;
+  background: #fff;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 40rpx;
+  align-items: center;
+}
+
+.total-box {
+  margin-top: 20rpx;
+  border-top: 1rpx #f4f4f4 solid;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 40rpx;
+  box-sizing: content-box;
+}
+.price-tit{
+  font-size: 28rpx;
+  color: #242631;
+  padding-right: 10rpx;
+}
+.price-icon{
+  color: #FF9056;
+  font-size: 26rpx;
+}
+.price-num{
+  font-size: 32rpx;
+  color: #FF9056
+}
+
+.order-img {
+  width: 48px;
+  height: 48px;
+  background: #900;
+}
+
+.order-list-top {
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx #f4f4f4 solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-tit {
+  font-size: 32rpx;
+  color: #242631;
+  font-weight: bolder;
+  padding-left: 40rpx;
+}
+
+.title-box {
+  font-size: 26rpx;
+  font-weight: bold;
+  width: calc(100% - 108px);
+  box-sizing: content-box;
+  padding-left: 20rpx;
+  line-height: 40rpx;
+}
+
+.order-num {
+  width: 30px;
+  text-align: left;
+  font-size: 26rpx;
+}
+
+.pro-price {
+  width: 30px;
+  text-align: left;
+  font-size: 28rpx;
+}
+
+.robot-box {
+  width: 180rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  border: 1rpx #ffa364 solid;
+  margin-right: 40rpx;
+  color: #ffa364;
+}
+
+.bottom {
+  height: 80rpx;
+  width: 100%;
+  background: #090;
+}
+
+.pay-type{
+  margin-top: 40rpx;
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "y-tit": "/components/index/title/title",
+    "van-divider": "/dist/divider/index",
+    "y-cell": "/components/my/cell/cell"
+  }
+}

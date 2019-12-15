@@ -1,0 +1,33 @@
+<!--miniprogram/pages/roomControl/roomControl.wxml-->
+<view class="container">
+  <view class="box {{!isMenu?'left-move':''}}">
+    <scroll-view class="menu" scroll-y='true'>
+      <view class="menu-group">
+        <!--全部-->
+        <view class="menu-item {{allSpace?'menu-item-active':''}}" bindtap="selAllSapce">
+          <image class="menu-img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_all-rooms@1x.png" />
+        </view>
+        <!--/全部-->
+        <block>
+          <view wx:for="{{subsetHomeRoomVoList}}" class="menu-item {{selIndex == index&&!allSpace?'menu-item-active':''}}" wx:key="index" data-spaceid="{{item.spaceId}}" data-spacename="{{item.spaceName}}" data-index="{{index}}" bindtap="selectDeviceSpace">
+            <image class="menu-img" src="{{item.src}}" />
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+    <view class="main">
+      <view class="main-top">
+        <image class="menu-icon" bindtap="menuSlide" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_menu@2x.png" />
+        <y-room-name cnName="{{spaceName}}" />
+      </view>
+      <scroll-view class="device-box" scroll-y='true'>
+        <view class="device-group">
+          <block wx:for="{{deviceData}}" wx:key="index">
+            <y-device entityId="{{item.entityId}}" entityCode="{{item.entityCode}}" class="device-item" deviceDetailsData="{{item}}" deviceType="corridorLamp" cnName="{{item.entityName}}" devSrc="{{item.devSrc}}" isOn="{{item.yzsStatus}}" bind:refDevice="refDevice"
+            />
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

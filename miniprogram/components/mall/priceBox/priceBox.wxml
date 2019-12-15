@@ -1,0 +1,6 @@
+<!--components/mall/priceBox/priceBox.wxml-->
+<view class="page">
+  <text class="pri-a">￥</text>
+  <text class="price">{{prePri}}</text>
+  <text class="pri">￥{{oriPri}}</text>
+</view>

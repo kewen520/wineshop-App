@@ -1,0 +1,36 @@
+<!--miniprogram/pages/openingRecord/openingRecord.wxml-->
+<wxs src="../../../../util/filter.wxs" module="util" />
+<view class="container">
+  <view class="tit" wx:if="{{todayLog.length}}">
+    <y-tit enTit="今天" class="tit" />
+  </view>
+  <block wx:for="{{todayLog}}" wx:key="index">
+    <y-cell title="人脸解锁成功" class="cell" describe="{{item}}" />
+  </block>
+  <view class="tit" wx:if="{{yesterdayLog.length}}">
+    <y-tit enTit="昨天" class="tit" />
+  </view>
+  <block wx:for="{{yesterdayLog}}" wx:key="index">
+    <y-cell title="人脸解锁成功" class="cell" describe="{{item}}" />
+  </block>
+  <view class="tit" wx:if="{{earlierLog.length}}">
+    <y-tit enTit="更早" class="tit" />
+  </view>
+  <block wx:for="{{earlierLog}}" wx:key="index">
+    <y-cell title="人脸解锁成功" class="cell" describe="{{item}}" />
+  </block>
+  <!-- <y-cell title="人脸解锁成功" describe="14:35" />
+  <view class="divider">
+    <van-divider />
+  </view>
+  <y-cell title="人脸解锁成功" class="p-b" describe="14:35" />
+  <y-cell title="人脸解锁成功" describe="14:35" />
+  <view class="divider">
+    <van-divider />
+  </view>
+  <view class="tit">
+    <y-tit enTit="更早" class="tit" />
+  </view>
+  <y-cell title="人脸解锁成功" class="p-b" describe="2019-05-14 14:35" />
+  <y-cell title="人脸解锁成功" describe="2019-05-14 14:35" /> -->
+</view>

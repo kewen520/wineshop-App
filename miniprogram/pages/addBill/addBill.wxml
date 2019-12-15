@@ -1,0 +1,16 @@
+<!--miniprogram/pages/addBill/addBill.wxml-->
+<view class="container">
+  <van-cell-group>
+    <van-field value="{{ username }}" required clearable label="发票抬头" placeholder="请填写公司名称（可检索）" bind:click-icon="onClickIcon" />
+    <van-field value="{{ username }}" required clearable label="纳税人识别号" placeholder="请填写纳税人识别号" bind:click-icon="onClickIcon" />
+    <van-field value="{{ username }}" clearable label="发票内容" placeholder="请填写发票内容" bind:click-icon="onClickIcon" />
+    <van-field value="{{ username }}" clearable label="开户银行" placeholder="请填写开户银行" bind:click-icon="onClickIcon" />
+    <van-field value="{{ username }}" clearable label="银行账户" placeholder="请填写银行账户" bind:click-icon="onClickIcon" />
+    <van-field value="{{ username }}" clearable label="公司地址" placeholder="请填写公司地址" bind:click-icon="onClickIcon" />
+    <van-field value="{{ username }}" clearable label="电话号码" placeholder="请填写公司电话" bind:click-icon="onClickIcon" />    
+
+    
+  </van-cell-group>
+
+  <van-button type="primary" class="btn" size="large">提交</van-button>
+</view>

@@ -1,0 +1,19 @@
+/* components/roomControl/roomName/roomName.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+}
+.cn-tit{
+  line-height: 80rpx;
+  font-size: 50rpx;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 20rpx;
+}
+.en-tit{
+  line-height: 40rpx;
+  font-size: 30rpx;
+  padding-top: 10rpx;
+  color: rgba(255, 255, 255, .2);
+}

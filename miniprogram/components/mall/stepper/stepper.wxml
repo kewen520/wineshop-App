@@ -1,0 +1,10 @@
+<!--components/mall/stepper/stepper.wxml-->
+<view class="page">
+  <view class="sub">
+    <image class="icon-img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/home/icon_add(2).png" />
+  </view>
+  <text class="shop-num">100</text>
+  <view class="add">
+    <image class="icon-img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/home/icon_add(1).png" />
+  </view>
+</view>

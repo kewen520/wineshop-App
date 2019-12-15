@@ -1,0 +1,53 @@
+/* components/historicalFeedback/infobox/infobox.wxss */
+
+.container {
+  padding: 40rpx;
+}
+
+.tit-box {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tit {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.status {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.content {
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: rgba(255, 255, 255, 0.2);
+  margin-top: 20rpx;
+}
+
+.item {
+  position: relative;
+  padding-bottom: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.item::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 200%;
+  height: 200%;
+  border-bottom: 1rpx solid rgba(255, 255, 255, 0.1);
+  border-radius: inherit;
+  content: " ";
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+.item:last-child::after{  
+  border-bottom: none;
+}

@@ -1,0 +1,9 @@
+<!--components/head/head.wxml-->
+<view class="container"></view>
+<image src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/banner@2x.png" class="head-img" mode="aspectFill"></image>
+<view class="head-txt-box">
+  <text class="tit">{{title}}</text>
+  <text class="describe">{{describe}}</text>
+</view>
+<view class="head-model-box">
+</view>

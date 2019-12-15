@@ -1,0 +1,12 @@
+<!--components/mall/shopCard/shopCard.wxml-->
+<view class="shop-item" wx:key="index">
+  <view class="shop-box">
+    <image src="{{shopData.thumb}}" class="shop-img" />
+    <view class="shop-info">
+      <text class="shop-title">{{shopData.title}}</text>
+      <text class="shop-describe">蒙牛特仑苏纯牛奶16盒蒙牛特仑苏纯牛奶16盒蒙牛特仑苏纯牛奶16盒蒙牛特仑苏纯牛奶16盒</text>
+      <price-box prePri="25" oriPri="40" />
+      <y-stepper class="stepper" />
+    </view>
+  </view>
+</view>

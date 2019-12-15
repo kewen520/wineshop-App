@@ -1,0 +1,5 @@
+<!--components/device/airConditioning/direction/direction.wxml-->
+<view class="container">
+  <text class="box iconfont icon-icon_winddirection_up {{statu==0?'active':''}}" data-index="0" bind:tap="onMode" ></text>
+  <text class="box iconfont icon-icon_blowingmode {{statu==1?'active':''}}" data-index="1" bind:tap="onMode"></text>
+</view>

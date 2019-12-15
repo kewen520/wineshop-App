@@ -1,0 +1,14 @@
+<!--components/device/progress-bar/progress-bar.wxml-->
+<view class="container">
+  <view wx:if="{{!isOn}}" class="shade"></view>
+  <text class="controller-txt" wx:if="{{isVal}}">{{comVal}}</text>
+  <view class="controller-box">
+    <image class="controller-icon" src="{{leftImg}}" />
+
+    <view class="control">
+      <van-slider value="{{comVal}}" bind:change="onChange" />
+    </view>
+
+    <image class="controller-icon" src="{{rightImg}}" />
+  </view>
+</view>

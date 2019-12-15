@@ -1,0 +1,12 @@
+<!--components/device/top/top.wxml-->
+<view class="top">
+  <!-- <image wx:if="{{preOrNextData.isStart}}" class="icon-box disable" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/im_bg_home.png" />
+  <image wx:else class="icon-box" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/im_bg_home.png"  data-entityid="{{preOrNextData.preEntityId}}" data-pantype="{{preOrNextData.prePanType}}" bindtap="jumpPame" /> -->
+  <view class="tit-box">
+    <text class="cn-tit">{{cnTit}}</text>
+    <text class="en-tit">{{enTit}}</text>
+  </view>
+  <!-- <image wx:if="{{preOrNextData.isEnd}}" class="icon-box disable" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_next.png" />
+  <image wx:else class="icon-box" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_next.png"
+  data-entityid="{{preOrNextData.nextEntityId}}" data-pantype="{{preOrNextData.nextPanType}}" bindtap="jumpPame"  /> -->
+</view>

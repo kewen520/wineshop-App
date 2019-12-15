@@ -1,0 +1,2 @@
+/* components/device/airConditioning/direction/direction.wxss */
+@import "../common.wxss";

@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "设备详情",
+  "usingComponents": {
+    "y-progress-bar": "/components/device/progress-bar/progress-bar",
+    "y-derail": "/components/device/derail/derail",
+    "y-top": "/components/device/top/top",
+    "y-mode": "/components/device/airConditioning/mode/mode",
+    "y-speed": "/components/device/airConditioning/speed/speed",
+    "y-direction": "/components/device/airConditioning/direction/direction",
+    "van-tab": "/dist/tab/index",
+    "van-tabs": "/dist/tabs/index"
+  }
+}

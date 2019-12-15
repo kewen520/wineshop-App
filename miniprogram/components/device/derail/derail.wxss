@@ -1,0 +1,33 @@
+/* components/device/derail/derail.wxss */
+.on-off{
+  width: 70rpx;
+  height: 60rpx;
+  display: flex;
+  flex: row;
+  align-items: center;
+  position: relative;
+}
+.circular{
+  transition: left .1s;
+}
+.on-off > .line{
+  height: 24rpx;
+  width: 100%;
+  background: #E4E5E6;
+  border-radius: 12rpx;
+}
+.on-off > .circular{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 0;
+  background: #fff;
+  border-radius: 20rpx;
+  box-shadow: var(--yzsShadowSize) var(--blackShadow)
+}
+.on-off.device-on > .line{
+  background: #ffa364;
+}
+.on-off.device-on > .circular{
+  left: 30rpx !important;
+}

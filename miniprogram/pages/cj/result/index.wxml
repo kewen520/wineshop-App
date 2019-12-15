@@ -1,0 +1,4 @@
+<!--pages/result/index.wxml-->
+<view class="page">
+  <v-result status='{{status}}' udid='{{udid}}' />
+</view>

@@ -1,0 +1,52 @@
+/* pages/userList/index.wxss */
+page{
+  background: #fff;
+}
+.container{
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+.loading-panel{
+  width: 100%;
+  text-align: center;
+}
+.loading {
+  display: block;
+}
+.none-data{
+  margin: 180rpx 0;
+  text-align: center;
+}
+.loading .van-loading{
+  margin:160rpx auto;
+  display:block;
+}
+.user-btn button {
+  margin: 60rpx auto 60rpx auto;
+  width: 160rpx;
+  height: 160rpx;
+  background: #017bff;
+  border: 1px solid #017bff;
+  display: block;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-icon{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.dialog-txt{
+  display: block;
+  width: 100%;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+.van-button__text {
+  height: 60rpx;
+}

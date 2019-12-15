@@ -1,0 +1,269 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"appid": "wx64eb9e2828c2b180",
+	"projectname": "wxApp",
+	"libVersion": "2.9.4",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 26,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "引导页",
+					"pathName": "pages/guide/guide",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "我的",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "建议反馈",
+					"pathName": "pages/feedback/feedback",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "版本",
+					"pathName": "pages/edition/edition",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "历史反馈",
+					"pathName": "pages/historicalFeedback/historicalFeedback",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "开票信息",
+					"pathName": "pages/bill/bill",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加开票信息",
+					"pathName": "pages/addBill/addBill",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "用户信息",
+					"pathName": "pages/userInfo/userInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "房控",
+					"pathName": "pages/roomControl/roomControl",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "走廊灯",
+					"pathName": "pages/device/corridorLamp/corridorLamp",
+					"query": "entityId=5420",
+					"scene": null
+				},
+				{
+					"id": 11,
+					"name": "窗帘",
+					"pathName": "pages/device/curtain/curtain",
+					"query": "entityId=5421",
+					"scene": null
+				},
+				{
+					"id": 12,
+					"name": "空调",
+					"pathName": "pages/device/airConditioning/airConditioning",
+					"query": "entityId=5512",
+					"scene": null
+				},
+				{
+					"id": 13,
+					"name": "门锁",
+					"pathName": "pages/device/doorLock/doorLock",
+					"query": "entityId=5514",
+					"scene": null
+				},
+				{
+					"id": 14,
+					"name": "门锁记录",
+					"pathName": "pages/device/doorLock/openingRecord/openingRecord",
+					"query": "deviceCode=C5041B3BDD4A",
+					"scene": null
+				},
+				{
+					"id": 15,
+					"name": "pages/cj/index/index",
+					"pathName": "pages/cj/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新增",
+					"pathName": "pages/cj/addUser/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cj/addUser/index",
+					"pathName": "pages/cj/addUser/index",
+					"query": "entityId=2908&pageId=home",
+					"scene": null
+				},
+				{
+					"id": 18,
+					"name": "pages/cj/userList/index",
+					"pathName": "pages/cj/userList/index",
+					"query": "entityId=2908&pageId=home",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/swipe/swipe",
+					"pathName": "pages/swipe/swipe",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "表单",
+					"pathName": "pages/form/form",
+					"query": "entityId=5420",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/closeStore/closeStore",
+					"pathName": "pages/closeStore/closeStore",
+					"query": "entityId=5421",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/demo/demo",
+					"pathName": "pages/demo/demo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商城",
+					"pathName": "pages/mall/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mall/index/index",
+					"pathName": "pages/mall/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "详情",
+					"pathName": "pages/mall/detailed/detailed",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商品列表页",
+					"pathName": "pages/mall/shopList/shopList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商城首页",
+					"pathName": "pages/mall/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "购物车",
+					"pathName": "pages/mall/shoppingCart/shoppingCart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单",
+					"pathName": "pages/mall/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商城订单",
+					"pathName": "pages/mall/mallOrder/mallOrder",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

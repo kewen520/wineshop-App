@@ -1,0 +1,28 @@
+<!--miniprogram/pages/my/index.wxml-->
+<view class="container">
+  <view class="head">
+    <y-head title="{{memberDetail.relaname}}" describe="手机号：{{memberDetail.mobile}}" />
+    <image class="avatar" src="{{memberDetail.avatar}}" bindtap="toMemberDetail" />
+    <!-- <button open-type='share' class="share" plain='true'>
+      <image src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_share@2x.png" ></image>    
+    </button> -->
+
+    <button open-type='share' class="share" style="background-image:url(https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_share@2x.png);" plain='true'></button>
+  </view>
+  <!-- <view class="y-cell">
+    <y-cell iconType="1" title="开票信息" arrow="{{true}}" bindtap="toBill" />
+  </view> -->
+  <view class="y-cell msg">
+    <view class="cir" wx:if="{{msgTotal}}"></view>
+    <y-cell iconType="2" title="我的消息" describe="{{msgTotal}}个新消息" />
+  </view>
+  <view class="line"></view>
+  <view class="y-cell">
+    <y-cell iconType="3" title="关于" describe="V1.0" arrow="{{true}}" bindtap="toAbout" />
+  </view>
+  <view class="y-cell">
+    <y-cell iconType="4" data-id="4" title="建议反馈" arrow="{{true}}" bindtap="handlePage" />
+  </view>
+
+
+</view>

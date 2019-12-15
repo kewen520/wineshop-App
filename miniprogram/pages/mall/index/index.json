@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-sidebar": "/dist/sidebar/index",
+    "van-sidebar-item": "/dist/sidebar-item/index",
+    "shop-card": "/components/mall/shopCard/shopCard",
+    "shop-detailed": "/components/mall/detailed/detailed"
+  }
+}

@@ -1,0 +1,60 @@
+<!--miniprogram/pages/mall/detailed/detailed.wxml-->
+<view class="page">
+  <swiper class="shop-swiper" indicator-dots="false" circular="true" interval="5000" duration="500">
+    <block wx:for="{{bannerTop}}" wx:key="index">
+      <swiper-item class="swiper-item">
+        <image src="{{item}}" mode="widthFix"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="shop-info">
+    <view class="level">
+      <view class="price-box">
+        <text class="rmb">￥</text>
+        <text class="price">188</text>
+      </view>
+      <view class="share">
+        <image class="share-icon" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/ic_share.png" />
+        <text class="share-txt">分享</text>
+      </view>
+    </view>
+
+    <view class="name-box">
+      <text class="main-name">都市丽人睡衣女2019秋冬新品家居服印花时尚舒适柔软女士家居服套装DSH049 粉色 L</text>
+      <text class="sub-name">【都市丽人】11月27日-11月30日，2件8折3件7折，特惠专区2件6折！更多优惠速来！211极速达上午买下午到！限时抢购，GO~ </text>
+    </view>
+
+    <view class="level-txt">
+      <text class="txt">库存：199</text>
+      <text class="txt">客服电话：0517-85206026</text>
+      <text class="txt">客服时间：9:00~17:00</text>
+    </view>
+
+    <view class="pro-introduce">
+      <image class="img" mode="widthFix" src="//img11.360buyimg.com/cms/jfs/t1/45188/37/8694/248933/5d634dfcE3a88a8c1/0b6a0aa58d94398d.png" loaded="23" />
+      <image class="img" mode="widthFix" src="//img10.360buyimg.com/cms/jfs/t1/55961/19/11611/153265/5d897bd0E2bf89b65/686f5f7492f7a905.jpg" alt="DSH049拼款_01.jpg" loaded="22" />
+      <image class="img" mode="widthFix" src="//img13.360buyimg.com/cms/jfs/t1/69190/21/11550/74559/5d897bd0E16914cae/f8b8f3084a146afd.jpg" alt="DSH049拼款_02.jpg" loaded="21" />
+      <image class="img" mode="widthFix" src="//img11.360buyimg.com/cms/jfs/t1/72806/27/11102/156046/5d897bd0E380856f2/ddd481858ea45639.jpg" alt="DSH049拼款_03.jpg" loaded="20" />
+      <image class="img" mode="widthFix" src="//img13.360buyimg.com/cms/jfs/t1/81237/16/11143/108934/5d897bd0E8ac60fb0/492cf3d32a63aad4.jpg" alt="DSH049拼款_04.jpg" loaded="19" />
+      <image class="img" mode="widthFix" src="//img11.360buyimg.com/cms/jfs/t1/63611/27/11400/97746/5d897bd0E36efbadf/4e5825b390720875.jpg" alt="DSH049拼款_05.jpg" loaded="18" />
+      <image class="img" mode="widthFix" src="//img13.360buyimg.com/cms/jfs/t1/73058/34/11196/200941/5d897bd0Ed28a0c4e/567f7b98415687c8.jpg" alt="DSH049拼款_06.jpg" loaded="17" />
+      <image class="img" mode="widthFix" src="//img12.360buyimg.com/cms/jfs/t1/67107/24/11323/64712/5d897bd0E59e7adbb/83499d2113396e7d.jpg" alt="DSH049拼款_07.jpg" loaded="16" />
+      <image class="img" mode="widthFix" src="//img14.360buyimg.com/cms/jfs/t1/78536/13/11174/67669/5d897bd0E53176fce/e47e211535cb0316.jpg" alt="DSH049拼款_08.jpg" loaded="15" />
+      <image class="img" mode="widthFix" src="//img11.360buyimg.com/cms/jfs/t1/61870/16/11210/69300/5d897bd0E3fa3618f/d01e9cdb73ba7ef4.jpg" alt="DSH049拼款_09.jpg" loaded="14" />
+      <image class="img" mode="widthFix" src="//img13.360buyimg.com/cms/jfs/t1/42167/24/15863/51265/5d897bcfE1f8c5658/8d1c9bfff9135d87.jpg" alt="DSH049拼款_10.jpg" loaded="13" />
+      <image class="img" mode="widthFix" src="//img14.360buyimg.com/cms/jfs/t1/60897/22/11090/111158/5d897bd0Ea90025f9/511fed71036e75d8.jpg" alt="DSH049拼款_11.jpg" loaded="12" />
+      <image class="img" mode="widthFix" src="//img14.360buyimg.com/cms/jfs/t1/77230/38/11252/98138/5d897bd0Ed9668bf0/5ffacc1fce25c04e.jpg" alt="DSH049拼款_12.jpg" loaded="11" />
+      <image class="img" mode="widthFix" src="//img13.360buyimg.com/cms/jfs/t1/62819/35/11340/91493/5d897bd0E16f5922d/6127b433804d602d.jpg" alt="DSH049拼款_13.jpg" loaded="10" />
+      <image class="img" mode="widthFix" src="//img12.360buyimg.com/cms/jfs/t1/75611/40/11128/155116/5d897bd0E6d679e27/de69b9ca2219fe39.jpg" alt="DSH049拼款_14.jpg" loaded="9" />
+      <image class="img" mode="widthFix" src="//img14.360buyimg.com/cms/jfs/t1/49409/10/11457/102580/5d897bd0E5aae92f7/377e3f23e28a4485.jpg" alt="DSH049拼款_15.jpg" loaded="8" />
+      <image class="img" mode="widthFix" src="//img14.360buyimg.com/cms/jfs/t1/81734/20/11144/102505/5d897bd0E357bf3b1/aea15850b579cba1.jpg" alt="DSH049拼款_16.jpg" loaded="7" />
+      <image class="img" mode="widthFix" src="//img11.360buyimg.com/cms/jfs/t1/73711/31/11073/77465/5d897bd0Eb8d7316e/e9b39c201c4409e1.jpg" alt="DSH049拼款_17.jpg" loaded="6" />
+      <image class="img" mode="widthFix" src="//img14.360buyimg.com/cms/jfs/t1/66817/3/11206/98885/5d897bd0E0a1e55d7/d2207d55b25c88e0.jpg" alt="DSH049拼款_18.jpg" loaded="5" />
+      <image class="img" mode="widthFix" src="//img11.360buyimg.com/cms/jfs/t1/73926/29/11225/54212/5d897bcfE0727aa9d/15af611f47cfa1f7.jpg" alt="DSH049拼款_19.jpg" loaded="4" />
+      <image class="img" mode="widthFix" src="//img11.360buyimg.com/cms/jfs/t1/46524/29/11646/86042/5d897bd0Ec7d391e0/47f3c5f9a2262b5e.jpg" alt="DSH049拼款_20.jpg" loaded="3" />
+      <image class="img" mode="widthFix" src="//img11.360buyimg.com/cms/jfs/t1/43338/6/12049/49364/5d568efaEe52a4e29/80a6eb1decec624c.jpg" loaded="2" />
+      <image class="img" mode="widthFix" src="//img10.360buyimg.com/cms/jfs/t1/65203/38/7138/101309/5d53f941Eea4dd922/c66a808bab00a828.jpg" loaded="1" />
+    </view>
+
+  </view>
+</view>

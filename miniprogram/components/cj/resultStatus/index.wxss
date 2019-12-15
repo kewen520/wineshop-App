@@ -1,0 +1,21 @@
+/* components/resultStatus/success/index.wxss */
+.page{
+  display: flex;
+  justify-content: center;
+}
+.img{
+  width: 400rpx;
+  height: 400rpx;
+}
+
+.btn button{
+  margin: 160rpx auto 40rpx auto;
+  display: block;
+  width: 60%;
+}
+.fail {
+  color: #d81e06;
+}
+.success{
+  color: #333
+}

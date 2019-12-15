@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "建议反馈",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "y-cell": "/components/my/cell/cell",
+    "van-radio": "/dist/radio/index",
+    "van-radio-group": "/dist/radio-group/index",
+    "van-cell-group": "/dist/cell-group/index",
+    "van-field": "/dist/field/index",
+    "van-button": "/dist/button/index"
+  }
+}

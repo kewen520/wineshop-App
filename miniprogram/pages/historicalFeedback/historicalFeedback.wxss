@@ -1,0 +1,13 @@
+/* miniprogram/pages/historicalFeedback/historicalFeedback.wxss */
+.van-tabs__wrap{
+  background: none !important;
+}
+.van-tab--active{
+  color: #FFA364 !important;
+}
+.van-tabs__line {
+  background-color: #242631 !important;
+}
+.van-hairline--top-bottom::after{
+  border: none !important;
+}

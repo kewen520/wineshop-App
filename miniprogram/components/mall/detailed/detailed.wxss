@@ -1,0 +1,83 @@
+/* components/mall/detailed/detailed.wxss */
+.page{  
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  border-radius: 10rpx;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left:0;
+  top: 0;
+}
+.main{
+  width: 90%;
+  height: 86%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12rpx;
+}
+.main-img{
+  width: 100%;
+  height: 400rpx;
+  background: #ccc;
+  border-radius: 12rpx 12rpx 0 0;
+}
+.contain{
+  padding: 30rpx;
+  flex: 1;
+}
+.shop-info{
+  height: 280rpx;
+  overflow: hidden;
+}
+.tit{
+  display: block;
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #242631;
+  line-height: 40rpx;
+  padding: 10rpx 0;
+}
+.describe{
+  display: block;
+  font-size: 24rpx;
+  line-height: 32rpx;
+}
+.operate-box{
+  margin-top: 20rpx;
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.stepper{
+  position: absolute;
+  right: 20rpx; 
+  width: 160rpx;
+}
+
+.btn{
+  margin-top: 20rpx;
+  display: block;
+  width: 100% !important;
+  height: 80rpx;
+  border-radius: 8rpx;
+  background: #FFA364;
+  border: solid 1rpx #FFA364 !important;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;  
+}
+
+.btn.hover-class{
+  opacity: .6
+}
+button:after {
+  border: none !important;
+}

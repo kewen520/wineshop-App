@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/swipe/swipe",
+    "pages/guide/guide",
+    "pages/serve/serve",
+    "pages/my/my",
+    "pages/feedback/feedback",
+    "pages/edition/edition",
+    "pages/historicalFeedback/historicalFeedback",
+    "pages/bill/bill",
+    "pages/addBill/addBill",
+    "pages/demo/demo",
+    "pages/userInfo/userInfo",
+    "pages/roomControl/roomControl",
+    "pages/device/corridorLamp/corridorLamp",
+    "pages/device/curtain/curtain",
+    "pages/device/airConditioning/airConditioning",
+    "pages/device/doorLock/doorLock",
+    "pages/device/doorLock/openingRecord/openingRecord",
+    "pages/cj/index/index",
+    "pages/cj/userList/index",
+    "pages/cj/addUser/index",
+    "pages/cj/result/index",
+    "pages/form/form",
+    "pages/closeStore/closeStore",
+    "pages/mall/index/index",
+    "pages/mall/detailed/detailed",
+    "pages/mall/shopList/shopList",
+    "pages/mall/home/home",
+    "pages/mall/settleAccounts/orderSuc/orderSuc",
+    "pages/mall/settleAccounts/orderFail/orderFail",
+    "pages/mall/shoppingCart/shoppingCart",
+    "pages/mall/revAddress/revAddress",
+    "pages/mall/order/order",
+    "pages/mall/mallOrder/mallOrder"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#242631",
+    "navigationBarTitleText": "世茂智慧酒店",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#242631",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home-on.png"
+      },
+      {
+        "pagePath": "pages/roomControl/roomControl",
+        "iconPath": "/images/equipment.png",
+        "selectedIconPath": "/images/equipment-on.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "/images/my.png",
+        "selectedIconPath": "/images/my-on.png"
+      },
+      {
+        "pagePath": "pages/mall/index/index",
+        "iconPath": "/images/mall-icon.png",
+        "selectedIconPath": "/images/mall-icon.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

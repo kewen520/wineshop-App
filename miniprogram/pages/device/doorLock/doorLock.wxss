@@ -1,0 +1,79 @@
+/* miniprogram/pages/device/doorLock.wxss */
+.cu-load.load-modal{
+  opacity: .8;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.Lock-img-box.hover-class{
+  opacity:.3;
+}
+.txt-box.hover-class{
+  opacity:.3;
+}
+
+
+.top {
+  width: 100%;
+}
+
+.derail-box{
+  position: absolute;
+  top: 200rpx;
+  right: 40rpx;
+}
+
+.device-img{
+  width: 360rpx;
+  height: 300rpx;
+  margin-top: 40rpx;
+}
+.txt{
+  font-size: 26rpx;
+  padding: 0 30rpx;
+  color: rgba(255, 255, 255, .3)
+}
+.p-t-40{
+  padding-top: 40rpx;
+}
+.p-t-20{
+  padding-top: 20rpx;
+}
+.Lock-img-box{
+  width: 330rpx;
+  height: 330rpx;
+  background-image: url(https://ym-smartspace.yunzhisheng.cn:8088/hotel/tyx.png);
+  background-size: 330rpx 330rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Lock-img {
+  width: 80rpx;
+  height: 80rpx;
+}
+.txt-box{
+  width: 236rpx;
+  height: 100rpx;
+  border-radius: 8rpx;
+  margin-top: 40rpx;
+  background: rgba(255, 255, 255, .06);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cn-txt{
+  font-size: 26rpx;
+  color: rgba(255, 255, 255, .7);
+  padding-bottom: 8rpx;
+}
+.en-txt{
+  font-size: 18rpx;
+  color: rgba(255, 255, 255, .2)
+}

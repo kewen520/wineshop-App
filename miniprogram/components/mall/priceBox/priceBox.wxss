@@ -1,0 +1,22 @@
+/* components/mall/priceBox/priceBox.wxss */
+.page{  
+  font-weight: 700;
+  padding-top: 20rpx;
+  color: #FF9056;
+}
+
+.pri-a {
+  font-size: 18rpx;
+}
+
+.price {
+  font-size: 26rpx;
+}
+
+.pri{
+  color: #BDBEC0;
+  font-size: 24rpx;
+  text-decoration: line-through;
+  font-weight: normal;
+  padding-left: 10rpx;
+}

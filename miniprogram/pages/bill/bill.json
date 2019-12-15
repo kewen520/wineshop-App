@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "开票信息",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "y-bill-box": "/components/bill/billBox/billBox"
+  }
+}

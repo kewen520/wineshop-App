@@ -1,0 +1,71 @@
+<!--miniprogram/pages/mall/order/order.wxml-->
+<view class="page">
+  <view class="top">
+    <view class="cupboard-name">
+      <image class="cupboard-name-icon" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/home/icon_location.png" />
+      <text class="cupboard-name-txt">新研大厦4号货柜</text>
+    </view>    
+    <text class="user-info">刘露婕（女士） 15658100319</text>
+  </view>
+  <scroll-view scroll-y class="main">
+    <view class="order-list-box">
+      <view class="order-list-top">
+        <text class="order-tit">订单明细</text>
+        <text class="robot-box">机器人送货</text>
+      </view>
+      <view class="order-list">
+        <image class="order-img" />
+        <view class="title-box">红豆麻薯千层抹茶吐司</view>
+        <text class="order-num">× 5</text>
+        <text class="pro-price">￥50</text>
+      </view>
+      <view class="order-list">
+        <image class="order-img" />
+        <view class="title-box">红豆麻薯千层抹茶吐司</view>
+        <text class="order-num">× 5</text>
+        <text class="pro-price">￥50</text>
+      </view>
+      <view class="order-list">
+        <image class="order-img" />
+        <view class="title-box">红豆麻薯千层抹茶吐司</view>
+        <text class="order-num">× 5</text>
+        <text class="pro-price">￥50</text>
+      </view>
+      <view class="order-list">
+        <image class="order-img" />
+        <view class="title-box">红豆麻薯千层抹茶吐司</view>
+        <text class="order-num">× 5</text>
+        <text class="pro-price">￥50</text>
+      </view>
+      <view class="order-list">
+        <image class="order-img" />
+        <view class="title-box">红豆麻薯千层抹茶吐司</view>
+        <text class="order-num">× 5</text>
+        <text class="pro-price">￥50</text>
+      </view>
+      <view class="order-list">
+        <image class="order-img" />
+        <view class="title-box">红豆麻薯千层抹茶吐司</view>
+        <text class="order-num">× 5</text>
+        <text class="pro-price">￥50</text>
+      </view>
+      <view class="order-list">
+        <image class="order-img" />
+        <view class="title-box">红豆麻薯千层抹茶吐司</view>
+        <text class="order-num">× 5</text>
+        <text class="pro-price">￥50</text>
+      </view>
+      <view class="total-box">
+        <text class="price-num">200</text>
+        <text class="price-icon">￥</text>
+        <text class="price-tit">合计</text>      
+      </view>
+    </view>
+
+    <!-- pay Type支付方式 -->
+    <view class="pay-type">
+      11
+    </view>
+  </scroll-view>
+  <view class="bottom"></view>
+</view>

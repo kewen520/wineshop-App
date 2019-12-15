@@ -1,0 +1,22 @@
+<!--pages/userList/index.wxml-->
+<view class="container">
+  <view wx:if="{{!ifShow}}" class='loading-panel'>
+    <van-loading class="loading" />
+    <text>正在努力加載中</text>
+  </view>
+  <view wx:else>
+    <view wx:if="{{userList.length}}">
+      <v-user-panel class="user-panel" bind:delUser="onDelUser" wx:for="{{userList}}" userInfo="{{item}}" wx:key="{{item.id}}" />
+    </view>
+    <view wx:else class='none-data'>
+      <text>暫無數據</text>
+    </view>
+    <van-button class='user-btn' type="primary" bindtap="onAddUser">
+      <image src="add-icon.png" class="add-icon" />
+    </van-button>
+  </view>
+
+  <van-dialog use-slot title="确认删除" show="{{ show }}" show-cancel-button confirm-button-open-type="getUserInfo" bind:close="onClose" bind:cancel="cancel" bind:confirm="confirm" bind:getuserinfo="getUserInfo">
+    <text class="dialog-txt">删除后该用户无法进行脸部识别</text>
+  </van-dialog>
+</view>

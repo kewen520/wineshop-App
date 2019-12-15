@@ -1,0 +1,2 @@
+/* components/device/airConditioning/speed/speed.wxss */
+@import "../common.wxss";

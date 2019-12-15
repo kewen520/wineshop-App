@@ -1,0 +1,10 @@
+<!--pages/my/cell/cell.wxml-->
+<view class="container {{arrow?'hover':''}}"
+  hover-class="hover-class"
+  hover-stay-time="70">
+  <image wx:if="{{iconType}}" class="icon" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/{{iconSrc}}" />
+  <text class="tit">{{title}}</text>
+  <text wx:if="{{describe}}" class="info">{{describe}}</text>
+  <image wx:if="{{img}}" src="{{img}}" class="img-box" />
+  <image wx:if="{{arrow}}" class="arrow" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_next@2x.png" />
+</view>

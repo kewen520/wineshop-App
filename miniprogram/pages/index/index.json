@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "y-tit": "/components/index/title/title",
+    "van-dialog": "/dist/dialog/index",
+    "y-device": "/components/index/device/device"
+  },
+  "enablePullDownRefresh": true
+}

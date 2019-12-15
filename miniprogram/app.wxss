@@ -1,0 +1,37 @@
+/**app.wxss**/
+@import "util/main.wxss";
+@import "util/icon.wxss";
+page{
+  background: #1D1F28;
+  height: 100%;
+  font-family:PingFangSC-Medium;
+}
+page::after{
+content: '';
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 0;
+background-color: #242631;
+z-index: 9999;
+}
+
+.van-radio__icon--checked {
+  background-color: #ffa364 !important;
+  border-color: #ffa364 !important;
+}
+
+.van-button--primary{
+  background: #FFA364 !important;
+  border: 1px solid #FFA364 !important;
+}
+.van-button--large{
+  line-height: 90rpx !important;
+  height: 90rpx !important;
+
+}
+.van-button {
+  display: block;
+  font-size: 28rpx !important;
+}

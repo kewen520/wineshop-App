@@ -1,0 +1,3 @@
+<!-- pages/demo/demo.wxml -->
+<button bindtap="unlock">开锁</button>
+<view class="log" wx:for="{{logs}}" wx:key="{{index}}">{{item}}</view>

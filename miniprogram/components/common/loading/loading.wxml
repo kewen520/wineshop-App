@@ -1,0 +1,8 @@
+<!--components/common/loading/loading.wxml-->
+<view class="cu-modal {{isShow?'show':''}}">
+  <view class="cu-dialog">    
+    <view class="padding-xl">
+      加载中...
+    </view>
+  </view>
+</view>

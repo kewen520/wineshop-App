@@ -1,0 +1,5 @@
+<!--components/index/title/title.wxml-->
+<view class="container">
+  <text class="cn">{{cnTit}}</text>
+  <text class="en">{{enTit}}</text>
+</view>

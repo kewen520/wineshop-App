@@ -1,0 +1,16 @@
+<!--miniprogram/pages/device/doorLock.wxml-->
+<view class="container">
+  <y-top class="top" cnTit="门锁" enTit="Door Lock" preOrNextData="{{preOrNextData}}" />
+  <image class="device-img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/img_door_lock@2x.png" />
+  <text class="txt p-t-40">{{status}}</text>
+  <view class="Lock-img-box" bindtap="unlock" hover-class="hover-class"
+  hover-stay-time="70" >
+    <image class="Lock-img" src="{{!isOpen ? 'https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_locked@2x.png' : 'https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_unlocked@2x.png'}}" />
+  </view>  
+  <text class="txt p-t-20">温馨提示：门锁控制范围需在 3m 以内</text>
+  <view class="txt-box" bindtap="toLockLogData" hover-class="hover-class"
+  hover-stay-time="70">
+    <text class="cn-txt">查看开门记录</text>
+    <text class="en-txt">Open Door Record</text>
+  </view>
+</view>

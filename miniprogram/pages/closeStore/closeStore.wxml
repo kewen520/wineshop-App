@@ -1,0 +1,5 @@
+<!--miniprogram/pages/closeStore/closeStore.wxml-->
+<view class="page">
+  <image class="img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/img_closed@2x.png" />
+  <text class="txt">酒店已打烊，无法访问</text>
+</view>

@@ -1,0 +1,18 @@
+/* miniprogram/pages/bill/bill.wxss */
+.container{
+  padding: 40rpx;
+}
+.tit{
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: rgba(255, 255, 255, .2);
+  display: block;
+  margin-top: 40rpx;
+}
+.add-txt{
+  color: #FFA364;
+  line-height: 60rpx;
+  display: block;
+  font-size: 28rpx;
+  margin-top: 40rpx;
+}

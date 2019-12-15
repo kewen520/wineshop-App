@@ -1,0 +1,15 @@
+<!--miniprogram/pages/device/corridorLamp/corridorLamp.wxml-->
+<view class="container">
+  <y-derail class="derail-box" isOn="{{isOn}}" bindtap="disjunctor" />
+  <y-top class="top" cnTit="{{deviceDetailsData.entityName}}" preOrNextData="{{preOrNextData}}"  />
+  <image class="device-img" src="{{isOn?openStr:closeStr}}" />
+  <text class="txt" wx:if="{{hasColorTemperature}}">色温</text>
+  <view class="progress-bar" wx:if="{{hasColorTemperature}}">
+    <y-progress-bar isOn="{{isOn}}" entityId="{{entityId}}" bind:refData="refData" val="{{level}}" controlType="colorTemperature"  val="{{colorTemperature}}" isVal="{{false}}" leftImg="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_reduce_color_temperature@2x.png" rightImg="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_increase_color_temperature.@2x.png"
+    />
+  </view>
+  <text class="txt" wx:if="{{hasLevel}}">亮度 {{level}}</text>
+  <view class="progress-bar" wx:if="{{hasLevel}}">
+    <y-progress-bar isOn="{{isOn}}" entityId="{{entityId}}" bind:refData="refData" val="{{level}}" controlType="level" leftImg="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_light_dark@2x.png" rightImg="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_light_bright@2x.png" />
+  </view>
+</view>

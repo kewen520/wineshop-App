@@ -1,0 +1,14 @@
+/* components/index/title/title.wxss */
+.container{
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #fff;
+}
+.cn{
+  font-size: 36rpx;
+  padding-right: 20rpx;
+}
+.en{
+  font-size: 28rpx;
+  color: #52545c;
+}

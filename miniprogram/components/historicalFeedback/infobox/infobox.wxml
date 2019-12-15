@@ -1,0 +1,10 @@
+<!--components/historicalFeedback/infobox/infobox.wxml-->
+<view class="container">
+  <view class="item" wx:for="{{infoData}}" wx:key="index">
+    <view class="tit-box">
+      <text class="tit">反馈内容</text>
+      <text class="status">已提交</text>
+    </view>
+    <view class="content">{{item.content}}</view>
+  </view>
+</view>

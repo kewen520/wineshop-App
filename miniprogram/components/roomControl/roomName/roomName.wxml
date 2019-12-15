@@ -1,0 +1,5 @@
+<!--components/roomControl/roomName/roomName.wxml-->
+<view class="container">
+  <text class="cn-tit">{{cnName}}</text>
+  <text class="en-tit">{{enName}}</text>
+</view>

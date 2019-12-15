@@ -1,0 +1,11 @@
+<!--miniprogram/pages/historicalFeedback/historicalFeedback.wxml-->
+<view class="container">
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="酒店入住反馈">
+      <y-infobox infoData="{{stay}}"/>
+    </van-tab>
+    <van-tab title="酒店智控反馈">
+      <y-infobox infoData="{{intellect}}"/>
+    </van-tab>
+  </van-tabs>
+</view>

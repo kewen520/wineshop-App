@@ -1,0 +1,23 @@
+<!--pages/addUser/index.wxml-->
+<view class="page">
+<van-toast  show="{{ show }}" message="处理中" id="van-toast" />
+<view class="camera-box">
+  <image wx:if="{{src}}" class='photo'  mode="widthFix" src="{{src}}" />
+  <camera wx:else device-position="front" flash="off" binderror="error" class="camera">
+    <cover-view class='cameraGai'>
+      <cover-image src='circle.png' class='cover-image'></cover-image>
+    </cover-view>
+  </camera>
+</view>
+
+
+<van-cell-group>
+  <van-field value="{{ value }}" placeholder="请输入用户名" border="{{ false }}" bind:change="onChange" class="add-user-name" />
+</van-cell-group>
+
+
+<van-button wx:if="{{!disabled}}" type="primary" bindtap="takePhoto" class="upload">拍照上传</van-button>
+<van-button wx:else disabled type="primary" class="upload">拍照上传</van-button>
+<!-- <button type="primary" bindtap="startRecord">开始录像</button>
+<button type="primary" bindtap="stopRecord">结束录像</button> -->
+</view>

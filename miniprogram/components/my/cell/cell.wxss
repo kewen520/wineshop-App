@@ -1,0 +1,51 @@
+/* pages/my/cell/cell.wxss */
+.hover.hover-class{
+  background-color:rgba(255, 255, 255, .04);
+}
+
+.container {
+  width: 100%;
+  padding: 0 40rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon {
+  width: 46rpx;
+  height: 46rpx;
+  margin-right: 20rpx;
+}
+
+.tit {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: rgba(255, 255, 255, 0.7);
+  flex: 1;
+  margin-right: 20rpx;
+}
+
+.info {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 270rpx;
+  text-align: right;
+  margin-right: 20rpx;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.arrow {
+  width: 46rpx;
+  height: 46rpx;
+  opacity: 0.2;
+}
+
+.img-box {
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: 26rpx;
+  border: 4rpx #ccc solid;
+  margin-right: 20rpx;
+}

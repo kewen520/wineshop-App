@@ -1,0 +1,12 @@
+<!--components/index/device/device.wxml-->
+<view class="container" bindtap="toDerailDetails" hover-class="hover-class"
+  hover-stay-time="70">
+  <view class="h1">
+    <image src="{{devSrc}}" class="device-img" />
+    <y-derail wx:if="{{isOn!=0}}" class="derail-box" isOn="{{comIsOn}}" catchtap="disjunctor"/>
+  </view>
+  <view class="h2">
+    <text class="device-name">{{cnName}}</text>
+    <text class="device-en-name">{{enName}}</text>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+/* components/device/airConditioning/direction/direction.wxss */
+@import "../../../iconfont.wxss";
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+.iconfont{
+  color: #4d4f58;
+  transition: color .3s;
+}
+.box{
+  width: 64rpx;
+  height: 64rpx;
+  font-size: 64rpx;
+}
+.active{
+  color: #ffa364;
+}

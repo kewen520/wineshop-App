@@ -1,0 +1,10 @@
+<!--miniprogram/pages/device/curtain/curtain.wxml-->
+<view class="container">
+  <y-derail class="derail-box" isOn="{{isOn}}" bindtap="disjunctor" />
+  <y-top class="top" cnTit="{{deviceDetailsData.entityName}}" preOrNextData="{{preOrNextData}}" />
+  <image class="device-img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/img_curtain@2x.png" />
+  <text wx:if="{{isLevel}}" class="txt">位置</text>
+  <view class="progress-bar" wx:if="{{isLevel}}">
+    <y-progress-bar isOn="{{isOn}}" entityId="{{entityId}}" bind:refData="refData" val="{{level}}" controlType="level" leftImg="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_curtain_close@2x.png" rightImg="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_curtain_open@2x.png" />
+  </view>
+</view>

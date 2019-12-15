@@ -1,0 +1,89 @@
+/* miniprogram/pages/mall/detailed/detailed.wxss */
+
+.page {
+  background: #e8e8ed;
+}
+
+.shop-swiper {
+  height: 100vw;
+}
+
+.img {
+  width: 100vw;
+}
+
+.level {
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.price-box {
+  color: #e4393c;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-weight: 700;
+}
+
+.rmb {
+  font-size: 32rpx;
+}
+
+.price {
+  font-size: 50rpx;
+}
+
+.share {
+  display: flex;
+  flex-direction: column;
+  height: 90rpx;
+  width: 120rpx;
+  border-left: 1rpx #ccc solid;
+  align-items: center;
+}
+
+.share-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.share-txt {
+  font-size: 24rpx;
+  padding-top: 10rpx;
+}
+
+.name-box {
+  background: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.main-name {
+  display: block;
+  line-height: 48rpx;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sub-name {
+  display: block;
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  line-height: 30rpx;
+  color: #999;
+}
+
+.level-txt{
+  background: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+.txt{
+  display: block;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  
+}

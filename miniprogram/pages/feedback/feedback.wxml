@@ -1,0 +1,18 @@
+<!--miniprogram/pages/feedback/feedback.wxml-->
+<view class="container">
+  <view class="y-cell">
+    <y-cell title="历史反馈" arrow="{{true}}" bindtap="toHisFeedback" />
+  </view>
+  <view class="line"></view>
+  <text class="txt">反馈类型</text>
+  <van-radio-group class="radio-group" value="{{ radio }}" bind:change="onChange">
+    <van-radio name="0">酒店入住反馈</van-radio>
+    <van-radio name="1">酒店智控反馈</van-radio>
+  </van-radio-group>
+  <text class="txt">反馈内容</text>
+  <van-cell-group>
+    <van-field value="{{ message }}" type="textarea" placeholder="请输入反馈" autosize border="{{ false }}" bind:change="onChangeMessage" />
+  </van-cell-group>
+
+  <van-button type="primary" class="btn" size="large" bindtap="submit">提交</van-button>
+</view>

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "人脸管理",
+  "usingComponents": {
+    "v-user-panel": "/components/cj/userList/userPanel/index",
+    "van-button": "/dist/button/index",
+    "van-dialog": "/dist/dialog/index",
+    "van-loading": "/dist/loading/index",
+    "van-panel": "/dist/panel/index"
+  }
+}

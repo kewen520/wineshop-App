@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "van-divider": "/dist/divider/index",
+    "y-cell": "/components/my/cell/cell",
+    "y-loading": "/components/common/loading/loading",
+    "van-dialog": "/dist/dialog/index",
+    "van-cell-group": "/dist/cell-group/index",
+    "van-popup": "/dist/popup/index",
+    "van-field": "/dist/field/index",
+    "van-picker": "/dist/picker/index",
+    "van-datetime-picker": "/dist/datetime-picker/index",
+    "van-area": "/dist/area/index"
+  }
+}

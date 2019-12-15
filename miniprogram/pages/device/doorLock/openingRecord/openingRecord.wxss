@@ -1,0 +1,24 @@
+/* miniprogram/pages/openingRecord/openingRecord.wxss */
+
+.tit {
+  padding: 0 20rpx;
+}
+
+.p-b {
+  padding-bottom: 20rpx;
+}
+
+.divider {
+  padding: 0 40rpx;
+}
+
+.divider .van-divider::before {
+  height: 1rpx !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  /* border-style: none; */
+  border-width: 1rpx 0 0 !important;
+}
+
+.cell > .container {
+  padding: 0 !important;
+}

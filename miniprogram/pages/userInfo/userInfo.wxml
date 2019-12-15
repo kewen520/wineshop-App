@@ -1,0 +1,54 @@
+<!--miniprogram/pages/userInfo/userInfo.wxml-->
+<wxs src="../../util/filter.wxs" module="util" />
+<view class="container">
+  <view class="y-cell">
+    <y-cell title="头像" img="{{avatar}}" arrow bindtap="chooseImg" />
+  </view>
+  <view class="y-cell">
+    <y-cell title="名字" describe="{{name}}" arrow bindtap="showNamePopup" />
+  </view>
+  <view class="cu-form-group">
+    <view class="title">性別</view>
+    <picker bindchange="PickerChange" value="{{gender?'男':'女'}}" range="{{genderPicker}}">
+      <view class="picker">
+        {{util.genderFil(gender)}}
+      </view>
+    </picker>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">生日</view>
+    <picker mode="date" value="{{date}}" start="1949-10-01" end="2020-09-01" bindchange="DirthdayChange">
+      <view class="picker">
+        {{birthday}}
+      </view>
+    </picker>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">地址选择</view>
+    <picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker">
+        {{util.regionFil(region)[0]}}，{{util.regionFil(region)[1]}}，{{util.regionFil(region)[2]}}
+      </view>
+    </picker>
+  </view>
+  <view class="line" style="">
+    <van-divider />
+  </view>
+  <view class="y-cell">
+    <y-cell title="微信号" describe="{{wechat?wechat:'未知'}}" />
+  </view>
+  <view class="y-cell">
+    <y-cell title="手机号" describe="{{mobile?mobile:'未知'}}" />
+  </view>
+</view>
+
+<!--用户姓名-->
+<van-dialog use-slot title="名字" show="{{ showName }}" show-cancel-button confirm-button-open-type="getUserInfo" bind:close="onCloseName" bind:getuserinfo="editUserName">  
+  <van-cell-group class="v-input">
+    <image class="close" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_delete.svg" bindtap="clearNameVal" />
+    <van-field value="{{ nameVal }}" placeholder="请输入用户名" border="{{ false }}" bind:change="onChangeNameVal" />
+  </van-cell-group>
+</van-dialog>
+
+<!--加载-->
+<y-loading isShow="{{isShow}}" />

@@ -1,0 +1,12 @@
+<!--miniprogram/pages/bill/bill.wxml-->
+<view class="container">
+  <text class="tit">发票抬头</text>
+
+  <y-bill-box bindtap="toAddBiLL" />
+  <y-bill-box bindtap="toAddBiLL" />
+  <y-bill-box bindtap="toAddBiLL" />
+  <y-bill-box bindtap="toAddBiLL" />
+  <y-bill-box bindtap="toAddBiLL" />
+
+  <text class="add-txt" bindtap="toAddBiLL">+ 添加开票信息</text>
+</view>

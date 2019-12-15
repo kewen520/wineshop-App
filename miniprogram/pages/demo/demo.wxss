@@ -1,0 +1,4 @@
+/* pages/demo/demo.wxss */
+.log{
+  color: #fff;
+}

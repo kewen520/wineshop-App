@@ -1,0 +1,49 @@
+<!--miniprogram/pages/device/airConditioning/airConditioning.wxml-->
+<wxs src="../../../util/filter.wxs" module="util" />
+<view class="container">
+  <y-derail class="derail-box" isOn="{{isOn}}" bindtap="disjunctor" />
+  <y-top class="top" cnTit="{{deviceDetailsData.entityName}}" preOrNextData="{{preOrNextData}}" />
+  <image class="device-img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/img_air_conditioner@2x.png" />
+  <text class="txt">温度</text>
+  <view class="control">
+    <image class="btn-box" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_digree_minus.png"
+    data-trim="sub" bindtap="temperatureCon"/>
+    <view wx-if="{{isOn}}" class="controler-box">
+      <image class="temperature-img" src="{{util.airConSrc(temperatureNum)}}"></image>
+      <view class="controler-item item{{index}}" wx:for="{{13}}" wx:key="index" data-num="{{index}}" bindtap="temperatureCon"></view>
+      <view class="controler-txt">
+        <text class="controler-txt-num">{{util.airConTemp(temperatureNum)}}</text>
+        <text class="controler-txt-ty">{{modeName}}</text>
+      </view>
+    </view>
+    <view wx:else class="controler-box">
+      <image class="temperature-img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/0.svg"></image>
+      <view class="controler-txt">
+        <text class="controler-txt-num">__</text>
+        <text class="controler-txt-ty">{{modeName}}</text>
+      </view>
+    </view>
+    <image class="btn-box" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_digree_plus.png"
+    data-trim="add" bindtap="temperatureCon" />
+  </view>
+
+  <view class="mode-box">
+    <van-tabs type="card" class="mode-box">
+      <van-tab title="模式">
+        <view class="mode-item">
+          <y-mode isOn="{{isOn}}" statu="{{isOn?mode:'100'}}" modeItemOff data-style="0" bind:selectMode="selectMode" />
+        </view>
+      </van-tab>
+      <van-tab title="风速">
+        <view class="mode-item">
+          <y-speed isOn="{{isOn}}" statu="{{isOn?speed:'100'}}" data-style="1" bind:selectMode="selectMode" />
+        </view>
+      </van-tab>
+      <van-tab title="风向" wx:if="{{isHasDirection}}">
+        <view class="mode-item">
+          <y-direction isOn="{{isOn}}" statu="{{isOn?direction:'100'}}" data-style="2" bind:selectMode="selectMode" />
+        </view>
+      </van-tab>
+    </van-tabs>
+  </view>
+</view>

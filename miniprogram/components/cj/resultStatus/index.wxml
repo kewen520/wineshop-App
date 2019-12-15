@@ -1,0 +1,17 @@
+<!--components/resultStatus/success/index.wxml-->
+<view class='page'>
+  <image src="{{status?'success.png':'fail.png'}}" class='img'></image>
+</view>
+<view class='page'>
+  <text class="{{status?'success':'fail'}}">{{message}}</text>
+</view>
+<van-button wx:if="{{status}}" class='btn' type="primary" bindtap='cg'>
+  成功
+</van-button>
+<van-button wx:else class='btn' type="danger" bindtap='submit'>
+  重新拍摄
+</van-button>
+<!-- <van-button class='btn' type="{{status?'primary':'danger'}}" bindtap='submit'>
+  {{status? '完成' : '重新拍摄'}}
+</van-button> -->
+

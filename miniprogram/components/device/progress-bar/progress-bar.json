@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-slider": "/dist/slider/index"
+  }
+}

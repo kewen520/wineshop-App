@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "设备详情",
+  "usingComponents": {
+    "y-progress-bar": "/components/device/progress-bar/progress-bar",
+    "y-derail": "/components/device/derail/derail",
+    "y-top": "/components/device/top/top"
+  }
+}

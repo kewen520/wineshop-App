@@ -1,0 +1,9 @@
+<!--miniprogram/pages/edition/edition.wxml-->
+<view class="container">
+  <view class="top">
+    <image class="logo-img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/edition3@3x.png" />
+    <text class="hotel-name">世茂智慧酒店</text>
+    <text class="bottom-copyright">Version 1.0</text>
+  </view>
+  <text class="bottom-copyright">云茂互联 版权所有 copyright © 2019</text>
+</view>

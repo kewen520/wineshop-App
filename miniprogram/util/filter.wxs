@@ -1,0 +1,59 @@
+var genderFil = function(str) {
+  console.log('genderFil: ', str)
+  if (str == 1) {
+    return '男'
+  } else if (str == 2) {
+    return '女'
+  } else {
+    return '未知'
+  }
+}
+
+var airConSrc = function (num) {
+  var  urlPrefix = 'https://ym-smartspace.yunzhisheng.cn:8088/hotel/'
+  // console.log('num: ', num)
+  if (num>30) {
+    return urlPrefix + '30.svg'
+  } else if(num>=18 && num<=30) {
+    return urlPrefix + num + '.svg'
+  } else if (num < 18) {
+    return urlPrefix + '0.svg'
+  }
+}
+
+var airConTemp = function (num) {
+  if (num > 30) {
+    return 'H'
+  } else if (num >= 18 && num <= 30) {
+    return num
+  } else if (num < 18) {
+    return 'L'
+  }
+}
+
+var regionFil = function (str) {
+  console.log("regionFil-str: ", str)
+  if(str != null) {
+    return str.split(",")
+  }
+  return ['湖北省','黄石市','阳新县']
+}
+
+// var devSrc = function (json) {
+//   console.log('devSrc - json: ', json)
+// }
+
+var format = function (date) {
+  console.log(date)
+  return date.toLocaleString().substr(0, 10)
+}
+
+module.exports = {
+  genderFil: genderFil,
+  regionFil: regionFil,
+  format: format,
+  airConSrc: airConSrc,
+  airConTemp: airConTemp
+  // devSrc: devSrc
+
+}

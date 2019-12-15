@@ -1,0 +1,56 @@
+/* miniprogram/pages/feedback/feedback.wxss */
+
+.y-cell {
+  padding-top: 40rpx;
+}
+.line {
+  margin: 50rpx 40rpx 0 40rpx;
+  height: 10rpx;
+  border-top: 1rpx rgba(255, 255, 255, 0.1) solid;
+}
+
+.txt {
+  display: block;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #fff;
+  padding: 60rpx 40rpx;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  padding: 0 40rpx;
+}
+
+.van-radio__label {
+  color: #fff !important;
+  padding-right: 40rpx;
+}
+
+.van-cell {
+  padding-left: 40rpx !important;
+  padding-right: 40rpx !important;
+  background: none !important;
+  color: #fff !important;
+}
+.van-field__input{  
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #fff !important;
+}
+
+.van-hairline--top-bottom:after {
+  border-width: 0 !important;
+}
+
+.container{
+  position: relative;
+  height: 100%;
+}
+.btn{
+  position: absolute;
+  bottom: 60rpx;
+  left: 60rpx;
+  right: 60rpx;
+}

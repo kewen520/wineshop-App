@@ -1,0 +1,5 @@
+<!--components/device/derail/derail.wxml-->
+<view class="on-off {{isOn?'device-on':''}}">
+  <view class="line"></view>
+  <view class="circular"></view>
+</view>

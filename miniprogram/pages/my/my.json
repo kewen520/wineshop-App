@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "y-cell": "/components/my/cell/cell",
+    "y-head": "/components/head/head"
+  }
+}

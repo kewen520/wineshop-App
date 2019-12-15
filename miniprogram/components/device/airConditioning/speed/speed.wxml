@@ -1,0 +1,7 @@
+<!--components/device/airConditioning/speed/speed.wxml-->
+<view class="container">
+  <text class="box iconfont icon-icon_windspeed_low {{statu==0?'active':''}}" data-index="0" bind:tap="onMode" ></text>
+  <text class="box iconfont icon-icon_windspeed_middle {{statu==1?'active':''}}" data-index="1" bind:tap="onMode"></text>
+  <text class="box iconfont icon-icon_windspeed_high {{statu==2?'active':''}}" data-index="2" bind:tap="onMode"></text>
+  <text class="box iconfont icon-icon_automaticmode {{statu==3?'active':''}}" data-index="3" bind:tap="onMode"></text>
+</view>

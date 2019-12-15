@@ -1,0 +1,10 @@
+<!--components/bill/billBox/billBox.wxml-->
+<view class="container">
+  <view class="bill-box">
+    <view class="txt-box">
+      <text class="bill-tit">上海世茂股份有限公司</text>
+      <text class="bill-num">税号：91310000132202878T</text>
+    </view>
+    <image src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/edit@2x.png" class="icon" />
+  </view>
+</view>

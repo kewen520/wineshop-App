@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "y-derail": "/components/device/derail/derail"
+  }
+}

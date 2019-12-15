@@ -1,0 +1,56 @@
+<!--miniprogram/pages/index/index.wxml-->
+<wxs src="../../util/filter.wxs" module="util" />
+<view class="container">
+  <view class="head">
+    <!-- <image src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/banner@2x.png" class="head-img" mode="aspectFill"></image> -->
+    <swiper class="head-banner-swiper" indicator-dots="false" circular="true" autoplay="true" interval="5000" duration="500">
+      <block wx:for="{{bannerTop}}" wx:key="index">
+        <swiper-item class="swiper-item">
+          <image src="{{item}}" mode="widthFix"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="banner-zz"></view>
+
+    <view wx:if="{{!isVisitor}}" class="head-txt-box">
+      <text class="user-info">{{userInfo.name}}，您的房号{{userInfo.roomNum}}</text>
+    </view>
+    <view wx:else class="head-txt-box">
+      <text class="user-info">Hi，请先入住 >>  </text>
+      <text class="weather">暂无房间环境信息</text>
+    </view>
+    <scroll-view class="head-model-box" scroll-x='true'>
+      <view class="model-box">
+        <view class="model-item" wx:for="{{strategyList}}" data-name="{{item.name}}" data-id="{{item.strategyId}}" wx:key="index" bindtap="runStrategy">
+          <image class="model-img" src="{{item.src}}" />
+          <text class="model-tit">{{item.name}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="wrapper">
+    <y-tit cnTit="设备控制" enTit="Device Control" />
+    <swiper class="device-swiper round-dot">
+      <block wx:for="{{deviceData}}" wx:key="index">
+        <swiper-item class="swiper-item">
+          <view class="device-group">
+            <y-device wx:for="{{item}}" wx:key="index" entityId="{{item.entityId}}" entityCode="{{item.entityCode}}" class="device-item" deviceDetailsData="{{item}}" deviceType="corridorLamp" cnName="{{item.entityName}}" devSrc="{{item.devSrc}}" isOn="{{item.yzsStatus}}" bind:refDevice="refDevice" />
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+
+  </view>
+  <view class="wrapper" style="padding-top: 0;">
+    <y-tit cnTit="客房服务" enTit="Room Service" />
+    <swiper class="serve-swiper round-dot" bindchange="swiperChange" >
+      <block wx:for="{{swiperImgUrls}}" wx:key="{{item.url}}">
+        <swiper-item class="swiper-box service-swiper">
+          <image src="{{item.url}}" mode="widthFix" data-index="{{index}}" bindtap="swipclick"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view wx:if="{{isVisitor}}" class="shade-box" bindtap="onTip"></view>  
+</view>
+  <van-dialog id="van-dialog" class="dialog" />

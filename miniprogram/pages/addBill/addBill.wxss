@@ -1,0 +1,16 @@
+/* miniprogram/pages/addBill/addBill.wxss */
+.container{
+  padding: 40rpx;
+}
+.van-cell{
+  background: none !important;
+  margin-top: 20rpx !important;
+  color: rgba(255, 255, 255, .7) !important;
+}
+.van-cell:after, .van-hairline--top-bottom:after {
+  border: none !important;
+}
+.btn{
+  display: block;
+  margin-top: 140rpx;
+}
