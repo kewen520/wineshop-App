@@ -1,2 +1,93 @@
 <!--components/mall/order/mallOrderItem/mallOrderItem.wxml-->
-<view class="page"></view>
+<view class="page">
+<view class="mallorder_box">
+  <view class="mallorder_list">
+    <text class="mall_tit">云茂智慧酒店</text>
+    <text class="mall_tit_pay">待支付</text>
+  </view>
+  <view class="mallorder_picbox">
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+  </view>
+  <view class="mallorder_info">
+    <view class="info_list">
+      <text>订单编号</text>
+      <text>2223f212</text>
+    </view>
+    <view class="info_list">
+      <text>下单时间</text>
+      <text>2019-04-13 20:49:40</text>
+    </view>
+    <view class="info_list">
+      <view class="info_num">订单将于<text class="info_num">15分钟</text>后自动</view>
+    </view>
+  </view>
+  <view class="info_btnbox">
+       <view>再来一单</view>
+  </view>
+</view>
+<view class="mallorder_box">
+  <view class="mallorder_list">
+    <text class="mall_tit">云茂智慧酒店</text>
+    <text class="mall_tit_pay">待支付</text>
+  </view>
+  <view class="mallorder_picbox">
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+  </view>
+  <view class="mallorder_info">
+    <view class="info_list">
+      <text>订单编号</text>
+      <text>2223f212</text>
+    </view>
+    <view class="info_list">
+      <text>下单时间</text>
+      <text>2019-04-13 20:49:40</text>
+    </view>
+    <view class="info_list">
+      <view class="info_num">订单将于<text class="info_num">15分钟</text>后自动</view>
+    </view>
+  </view>
+  <view class="info_btnbox">
+       <view>再来一单</view>
+  </view>
+</view>
+<view class="mallorder_box">
+  <view class="mallorder_list">
+    <text class="mall_tit">云茂智慧酒店</text>
+    <text class="mall_tit_pay">待支付</text>
+  </view>
+  <view class="mallorder_picbox">
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+    <image class="orderpic"></image>
+  </view>
+  <view class="mallorder_info">
+    <view class="info_list">
+      <text>订单编号</text>
+      <text>2223f212</text>
+    </view>
+    <view class="info_list">
+      <text>下单时间</text>
+      <text>2019-04-13 20:49:40</text>
+    </view>
+    <view class="info_list">
+      <view class="info_num">订单将于<text class="info_num">15分钟</text>后自动</view>
+    </view>
+  </view>
+  <view class="info_btnbox">
+       <view>再来一单</view>
+  </view>
+</view>
+</view>

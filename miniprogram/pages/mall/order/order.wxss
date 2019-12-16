@@ -75,18 +75,21 @@
   padding: 0 40rpx;
   box-sizing: content-box;
 }
-.price-tit{
+
+.price-tit {
   font-size: 28rpx;
   color: #242631;
   padding-right: 10rpx;
 }
-.price-icon{
-  color: #FF9056;
+
+.price-icon {
+  color: #ff9056;
   font-size: 26rpx;
 }
-.price-num{
+
+.price-num {
   font-size: 32rpx;
-  color: #FF9056
+  color: #ff9056;
 }
 
 .order-img {
@@ -150,6 +153,20 @@
   background: #090;
 }
 
-.pay-type{
+.pay-type {
   margin-top: 40rpx;
 }
+
+.pay_list {
+  border-bottom: 1rpx solid #f4f4f4;
+  padding: 32rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+
+
+

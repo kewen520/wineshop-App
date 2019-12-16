@@ -4,7 +4,7 @@
     <view class="cupboard-name">
       <image class="cupboard-name-icon" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/home/icon_location.png" />
       <text class="cupboard-name-txt">新研大厦4号货柜</text>
-    </view>    
+    </view>
     <text class="user-info">刘露婕（女士） 15658100319</text>
   </view>
   <scroll-view scroll-y class="main">
@@ -24,7 +24,19 @@
 
     <!-- pay Type支付方式 -->
     <view class="pay-type">
-      11
+      <view class="pay_list">
+        <text>支付方式</text>
+        <text>微信支付</text>
+      </view>
+      <view class="pay_list">
+        <text>订单备注</text>
+        <text>早点送，要发票</text>
+      </view>
+      <view class="pay_list">
+        <text>送达时间</text>
+        <text>2019-12-16</text>
+      </view>
+
     </view>
   </scroll-view>
   <view class="bottom"></view>
