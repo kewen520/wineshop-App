@@ -20,6 +20,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    stopMove() {
+      return;
+    },
+    closeBox() {
+      console.log('closeBox');
+      this.triggerEvent('closeDetail', {}, {})
+    }
   }
 })

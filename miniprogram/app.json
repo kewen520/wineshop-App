@@ -55,14 +55,14 @@
         "selectedIconPath": "/images/equipment-on.png"
       },
       {
+        "pagePath": "pages/mall/index/index",
+        "iconPath": "/images/mallIcon.png",
+        "selectedIconPath": "/images/mallIcon-on.png"
+      },
+      {
         "pagePath": "pages/my/my",
         "iconPath": "/images/my.png",
         "selectedIconPath": "/images/my-on.png"
-      },
-      {
-        "pagePath": "pages/mall/index/index",
-        "iconPath": "/images/mall-icon.png",
-        "selectedIconPath": "/images/mall-icon.png"
       }
     ]
   },

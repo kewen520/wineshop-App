@@ -1,6 +1,7 @@
 <!--components/mall/detailed/detailed.wxml-->
-<view class="page">
+<view class="page" catch:touchmove="stopMove">
   <view class="main">
+    <image class="close-box" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/home/icon_close@2x(1).png" bindtap="closeBox" />
     <view class="main-img"></view>
     <view class="contain">
       <scroll-view class="shop-info" scroll-y>

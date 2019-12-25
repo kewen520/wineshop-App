@@ -36,10 +36,10 @@ Component({
    */
   data: {
     icon: [
-      'icon_face_recognition@2x.png',
+      'icon_store@2x.png',
       'icon_message@2x.png',
       'icon_message@2x(1).png',
-      '/icon_feedback@2x.png'
+      'icon_feedback@2x.png'
     ],
     iconSrc: ''
   },

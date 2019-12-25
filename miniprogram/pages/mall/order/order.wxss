@@ -148,25 +148,130 @@
 }
 
 .bottom {
-  height: 80rpx;
+  height: 100rpx;
   width: 100%;
-  background: #090;
+  display: flex;
+  padding: 0 20rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-total {
+  color: #bdbec0;
+  font-size: 26rpx;
+}
+
+.bottom-r {
+  margin-left: 40rpx;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn {
+  width: 200rpx;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background: #ffa364;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+}
+
+.price-total, .price-icon {
+  color: #fff;
+}
+
+.price-icon {
+  font-size: 26rpx;
+}
+
+.price-total {
+  font-size: 36rpx;
 }
 
 .pay-type {
   margin-top: 40rpx;
 }
 
-.pay_list {
+.pay_list:not(:last-of-type) {
   border-bottom: 1rpx solid #f4f4f4;
+}
+
+.pay_list {
   padding: 32rpx;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+.label{
+  width: 120rpx;
+}
+.contain{
+  flex: 1;
+  margin-left: 20rpx;
+}
 
+.van-dialog {
+  width: 270rpx !important;
+}
 
+.dialog-txt {
+  font-size: 28rpx;
+  padding: 80rpx 40rpx;
+}
 
+.van-button__text {
+  color: #fe8f55 !important;
+}
 
+.poput-box .van-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
 
+.wordNumLimit {
+  position: absolute;
+  color: #bdbec0;
+  font-size: 26rpx;
+  right: 59rpx;
+  bottom: 206rpx;
+}
 
+.poput-tit {
+  font-size: 32rpx;
+  padding: 40rpx 0;
+}
+
+.textarea-box {
+  width: 90%;
+  height: 220rpx;
+  background: #f0f0f0;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  font-size: 28rpx;
+  flex: 1;
+}
+
+.popup-btn {
+  width: 90%;
+  margin: 40rpx 0;
+  background: #ffa364;
+  /* border: 0rpx !important; */
+  color: #fff;
+}
+
+button::after {
+  display: none;
+}
+
+.hover-class {
+  background: rgba(255, 163, 100, 0.6);
+}

@@ -243,7 +243,7 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 28,
 					"name": "购物车",
 					"pathName": "pages/mall/shoppingCart/shoppingCart",
 					"query": "",

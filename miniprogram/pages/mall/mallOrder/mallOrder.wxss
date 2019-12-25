@@ -1,4 +1,20 @@
 /* miniprogram/pages/mall/mallOrder/mallOrder.wxss */
-.van-tab__pane{
+
+.van-tab__pane {
   padding: 24rpx;
+}
+
+.van-hairline--top-bottom:after {
+  border-width: 0 0 !important;
+}
+
+.van-tab--active {
+  color: #fff !important;
+}
+.van-tabs__line{
+  height: 0 !important;
+}
+
+.van-tabs__wrap {
+  background: none !important;
 }

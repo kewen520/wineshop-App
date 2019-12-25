@@ -1,41 +1,56 @@
 /* components/mall/detailed/detailed.wxss */
-.page{  
+
+.page {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 10rpx;
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  left:0;
+  left: 0;
   top: 0;
 }
-.main{
+
+.main {
   width: 90%;
   height: 86%;
   display: flex;
   flex-direction: column;
   background: #fff;
   border-radius: 12rpx;
+  position: relative;
 }
-.main-img{
+
+.close-box {
+  height: 56rpx;
+  width: 56rpx;
+  position: absolute;
+  right: 24rpx;
+  top: 24rpx;
+}
+
+.main-img {
   width: 100%;
   height: 400rpx;
   background: #ccc;
   border-radius: 12rpx 12rpx 0 0;
 }
-.contain{
+
+.contain {
   padding: 30rpx;
   flex: 1;
 }
-.shop-info{
+
+.shop-info {
   height: 280rpx;
   overflow: hidden;
 }
-.tit{
+
+.tit {
   display: block;
   font-size: 28rpx;
   font-weight: 700;
@@ -43,41 +58,45 @@
   line-height: 40rpx;
   padding: 10rpx 0;
 }
-.describe{
+
+.describe {
   display: block;
   font-size: 24rpx;
   line-height: 32rpx;
 }
-.operate-box{
+
+.operate-box {
   margin-top: 20rpx;
   height: 60rpx;
   width: 100%;
   display: flex;
   position: relative;
 }
-.stepper{
+
+.stepper {
   position: absolute;
-  right: 20rpx; 
+  right: 20rpx;
   width: 160rpx;
 }
 
-.btn{
+.btn {
   margin-top: 20rpx;
   display: block;
   width: 100% !important;
   height: 80rpx;
   border-radius: 8rpx;
-  background: #FFA364;
-  border: solid 1rpx #FFA364 !important;
+  background: #ffa364;
+  border: solid 1rpx #ffa364 !important;
   line-height: 80rpx;
   text-align: center;
   font-size: 28rpx;
-  color: #fff;  
+  color: #fff;
 }
 
-.btn.hover-class{
-  opacity: .6
+.btn.hover-class {
+  opacity: 0.6;
 }
+
 button:after {
   border: none !important;
 }

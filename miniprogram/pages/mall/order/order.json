@@ -1,5 +1,9 @@
 {
   "usingComponents": {
-    "y-order-item": "/components/mall/order/orderItem/orderItem"
+    "y-order-item": "/components/mall/order/orderItem/orderItem",
+    "y-dialog": "/dist/dialog/index",
+    "y-popup": "/dist/popup/index",
+    "y-field": "/dist/field/index",
+    "y-cell-group": "/dist/cell-group/index"
   }
 }

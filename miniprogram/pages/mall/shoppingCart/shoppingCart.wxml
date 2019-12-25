@@ -2,10 +2,14 @@
 <view class="page">
   <view class="top"></view>
   <scroll-view scroll-y class="main">
-    <block wx:for="{{16}}">
-      <shopping-cart-item class="shopping-cart-item" />
+    <block wx:for="{{16}}" :key="index">
+      <view class="cart-item-box">
+        <y-swipe-cell right-width="{{ 60 }}" class="shopping-cart-item">
+          <shopping-cart-item />
+          <view slot="right" class="remove">删除</view>
+        </y-swipe-cell>
+      </view>
     </block>
   </scroll-view>
   <view class="bottom"></view>
 </view>
-

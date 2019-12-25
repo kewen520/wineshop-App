@@ -136,5 +136,10 @@ Page({
         })
       }
     })
+  },
+  closeDetail() {
+    this.setData({
+      isShowDetail: false
+    })
   }
 })

@@ -21,8 +21,12 @@
       <text>{{wineshopName}}</text>
     </view>
     <view class="form-group">
-      <text class="label">楼栋和房间号</text>      
-      <text>{{roomNum}}</text>
+      <text class="label">楼栋和房间号</text>
+      <picker class="picker-box" bindchange="roomNumChange" value="{{index}}" range="{{picker}}">
+        <view class="picker">
+          {{index?picker[index]:'请选择楼栋和房间号'}}
+        </view>
+      </picker>
     </view>
   </view>
 

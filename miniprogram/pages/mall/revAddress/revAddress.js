@@ -9,7 +9,9 @@ Page({
     userPhone: "15658100319",
     wineshopName: "世茂酒店",
     roomNum: "B座608",
-    radio: '1'
+    radio: '1',
+    picker: ['喵喵喵', '汪汪汪', '哼唧哼唧'],
+    index: null,
   },
 
   /**
@@ -71,5 +73,11 @@ Page({
     this.setData({
       radio: event.detail
     });
+  },
+  roomNumChange(e) {
+    console.log("e: ", e)
+    this.setData({
+      index: e.detail.value
+    })
   }
 })

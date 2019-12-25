@@ -9,9 +9,10 @@
 
     <button open-type='share' class="share" style="background-image:url(https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_share@2x.png);" plain='true'></button>
   </view>
-  <!-- <view class="y-cell">
-    <y-cell iconType="1" title="开票信息" arrow="{{true}}" bindtap="toBill" />
-  </view> -->
+  <view class="y-cell">
+    <view class="cir" wx:if="{{msgTotal}}"></view>
+    <y-cell iconType="1" title="商城订单" arrow />
+  </view>
   <view class="y-cell msg">
     <view class="cir" wx:if="{{msgTotal}}"></view>
     <y-cell iconType="2" title="我的消息" describe="{{msgTotal}}个新消息" />

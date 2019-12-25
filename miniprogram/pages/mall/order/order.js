@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    showDialog: false,
+    showPopup: true,
+    commentsValue: ""
   },
 
   /**
@@ -62,5 +64,25 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  commentsHandle() {
+    console.log('commentsHandle')
+    this.setData({
+      showPopup: true
+    })
+  },
+  closeComments() {
+    this.setData({
+      showPopup: false,
+      commentsValue: ""
+    })
+  },
+  submitOrder() {
+    console.log("commentsValue: ", this.data.commentsValue);
+  },
+  commentsTextAreaBlur(e) {
+    this.setData({
+      commentsValue: e.detail.value
+    })
   }
 })
