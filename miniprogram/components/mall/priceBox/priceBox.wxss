@@ -1,7 +1,7 @@
 /* components/mall/priceBox/priceBox.wxss */
 .page{  
   font-weight: 700;
-  padding-top: 20rpx;
+  padding-top: 10rpx;
   color: #FF9056;
 }
 

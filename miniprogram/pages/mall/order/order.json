@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "y-order-item": "/components/mall/order/orderItem/orderItem",
+    "y-order-bottom": "/components/mall/order/bottom/bottom",
     "y-dialog": "/dist/dialog/index",
     "y-popup": "/dist/popup/index",
     "y-field": "/dist/field/index",

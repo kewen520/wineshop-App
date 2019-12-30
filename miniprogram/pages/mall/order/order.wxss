@@ -146,14 +146,9 @@
   margin-right: 32rpx;
   color: #ffa364;
 }
-
-.bottom {
+.y-order-bottom{
   height: 100rpx;
   width: 100%;
-  display: flex;
-  padding: 0 20rpx;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .order-total {

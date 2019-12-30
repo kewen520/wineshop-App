@@ -1,2 +1,4 @@
 <!--components/mall/shoppingCart/shoppingCartBox/shoppingCartBox.wxml-->
-<view class="page"></view>
+<view class="page">
+  <y-checkbox name="a">复选框 a</y-checkbox>
+</view>

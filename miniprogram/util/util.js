@@ -85,6 +85,37 @@ const utils = {
     // console.log(md5(signPar))
     return md5(signPar)
   },
+
+  /**
+   * 封封微信的的request
+   */
+  request(url, data = {}, method = "GET", contentType = "application/json") {
+    return new Promise(function(resolve, reject) {
+      wx.request({
+        url: url,
+        data: data,
+        method: method,
+        header: {
+          'Content-Type': contentType,
+          'X-Litemall-Token': wx.getStorageSync('token')
+        },
+        success: function(res) {
+
+          if (res.status == 1) {
+            resolve(res.data);
+          } else {
+            reject(res.errMsg);
+          }
+
+        },
+        fail: function(err) {
+          reject(err)
+        }
+      })
+    });
+  }
+
+
 }
 
 

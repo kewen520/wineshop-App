@@ -1,15 +1,22 @@
 <!--miniprogram/pages/mall/shoppingCart/shoppingCart.wxml-->
 <view class="page">
-  <view class="top"></view>
+  <view class="top">
+    <y-checkbox class="all-select" value="{{ isAllSelect }}" bind:change="onAllSelect">全选</y-checkbox>
+    <text class="remove-select">删除</text>
+  </view>
   <scroll-view scroll-y class="main">
-    <block wx:for="{{16}}" :key="index">
-      <view class="cart-item-box">
-        <y-swipe-cell right-width="{{ 60 }}" class="shopping-cart-item">
-          <shopping-cart-item />
-          <view slot="right" class="remove">删除</view>
-        </y-swipe-cell>
-      </view>
-    </block>
+    <y-checkbox-group value="{{ result }}" bind:change="onChange">
+      <block wx:for="{{16}}" wx:key="index">
+        <view class="cart-item-box">
+          <y-swipe-cell right-width="{{ 60 }}" class="shopping-cart-item">
+            <y-checkbox class="checkbox-box" name="{{item}}">
+              <shop-card class="shop-item" shopData="{{shopItem}}" data-id="{{item.id}}" />
+            </y-checkbox>
+            <view slot="right" class="remove">删除</view>
+          </y-swipe-cell>
+        </view>
+      </block>
+    </y-checkbox-group>
   </scroll-view>
-  <view class="bottom"></view>
+  <y-order-bottom goodsNum="{{goodsNum}}" totalPrice="{{totalPrice}}" class="y-order-bottom" />
 </view>

@@ -10,8 +10,7 @@
     <button open-type='share' class="share" style="background-image:url(https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_share@2x.png);" plain='true'></button>
   </view>
   <view class="y-cell">
-    <view class="cir" wx:if="{{msgTotal}}"></view>
-    <y-cell iconType="1" title="商城订单" arrow />
+    <y-cell iconType="1" title="商城订单" arrow bindtap="toMallOrder" />
   </view>
   <view class="y-cell msg">
     <view class="cir" wx:if="{{msgTotal}}"></view>

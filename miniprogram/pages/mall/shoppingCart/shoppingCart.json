@@ -1,6 +1,10 @@
 {
   "usingComponents": {
     "shopping-cart-item": "/components/mall/shoppingCart/shoppingCartBox/shoppingCartBox",
+    "y-order-bottom": "/components/mall/order/bottom/bottom",
+    "y-checkbox-group": "/dist/checkbox-group/index",
+    "y-checkbox": "/dist/checkbox/index",
+    "shop-card": "/components/mall/shopCard/shopCard",
     "y-swipe-cell": "/dist/swipe-cell/index"
   }
 }

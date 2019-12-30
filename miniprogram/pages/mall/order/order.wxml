@@ -39,25 +39,16 @@
 
     </view>
   </scroll-view>
-  <view class="bottom">
-    <text class="order-total">共计7件</text>
-    <view class="bottom-r">
-      <text class="order-total">合计：</text>
-      <text class="price-icon">￥</text>
-      <text class="price-total">100.00</text>
-      <view class="btn">提交订单</view>
-    </view>
-  </view>
+  <y-order-bottom class="y-order-bottom" />
   <y-dialog width="300" use-slot show="{{ showDialog }}" confirm-button-open-type="getUserInfo" bind:getuserinfo="getUserInfo" confirmButtonText="确定">
     <view class="dialog-txt">
       商品已超过可购数量，请重新选择！
     </view>
   </y-dialog>
   <y-popup class="poput-box" show="{{ showPopup }}" closeable position="bottom" custom-style="height: 300px" bind:close="closeComments">
-  <text class="poput-tit">订单备注</text>
-  <textarea class="textarea-box" maxlength="30" bindinput="commentsTextAreaBlur"  placeholder="请输入您的备注" value="{{ commentsValue }}" />
-  <button class="popup-btn" bindtap="submitOrder" hover-class="hover-class"
-  hover-stay-time="70">提交订单</button>
-  <text class="wordNumLimit">{{commentsValue.length}}/30</text>
+    <text class="poput-tit">订单备注</text>
+    <textarea class="textarea-box" maxlength="30" bindinput="commentsTextAreaBlur" placeholder="请输入您的备注" value="{{ commentsValue }}" />
+    <button class="popup-btn" bindtap="submitOrder" hover-class="hover-class" hover-stay-time="70">提交订单</button>
+    <text class="wordNumLimit">{{commentsValue.length}}/30</text>
   </y-popup>
 </view>

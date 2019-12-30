@@ -1,23 +1,21 @@
 /* components/mall/shopCard/shopCard.wxss */
 
-.shop-item {
-  padding: 20rpx 20rpx 0 20rpx;
-  height: 220rpx;
-}
 .shop-box{  
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   background: #fff;
   border-radius: 12rpx;
   width: 100%;
-  height: 100%;
+  height: 220rpx;
   padding: 20rpx;
+  box-sizing: border-box;
 }
 
 .shop-img {
-  width: 160rpx;
-  height: 160rpx;
+  width: 170rpx;
+  height: 170rpx;
   background: #090;
 }
 
@@ -60,7 +58,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  margin-top: 10rpx;
+  margin-top: 8rpx;
 }
 .operate{
   position: absolute;

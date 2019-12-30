@@ -1,0 +1,11 @@
+<!--components/mall/order/bottom/bottom.wxml-->
+<view class="page">
+  <text class="order-total" wx:if="{{totalPrice!=0}}">共计{{goodsNum}}件</text>
+  <view class="bottom-r">
+    <text class="order-total">合计：</text>
+    <text class="price-icon">￥</text>
+    <text class="price-total">{{totalPrice}}</text>
+    <view class="btn usable" wx:if="{{totalPrice!=0}}">提交订单</view>
+    <view class="btn disabled" wx:else="{{totalPrice!=0}}">提交订单</view>
+  </view>
+</view>

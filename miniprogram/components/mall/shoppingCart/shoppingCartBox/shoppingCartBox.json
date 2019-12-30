@@ -1,4 +1,7 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "y-checkbox": "/dist/checkbox/index",
+    "y-checkbox-group": "/dist/checkbox-group/index"
+  }
 }

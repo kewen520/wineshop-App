@@ -158,5 +158,10 @@ Page({
     wx.navigateTo({
       url: '/pages/edition/edition',
     })
+  },
+  toMallOrder() {
+    wx.navigateTo({
+      url: '/pages/mall/mallOrder/mallOrder',
+    })
   }
 })
