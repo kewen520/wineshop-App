@@ -9,19 +9,50 @@ var genderFil = function(str) {
   }
 }
 
-var airConSrc = function (num) {
-  var  urlPrefix = 'https://ym-smartspace.yunzhisheng.cn:8088/hotel/'
+var orderFgender = function(str) {
+  if (str == 0) {
+    return '先生'
+  } else if (str == 1) {
+    return '女士'
+  } else {
+    return '先生/女士'
+  }
+}
+
+var ninenum_filter = function(val) {
+  val = val ? val - 0 : 0;
+  if (val > 99) {
+    return "99+"
+  } else {
+    return val;
+  }
+}
+
+// 订单状态中文
+var orderStatus = function(val) {
+  if (val == "-1") {
+    return "已取消"
+  } else {
+    var orderArr = ['待付款', '待发货', '待收货', '已完成', '回收站']
+    console.log("val: ", val)
+    console.log("orderStatus: ", orderArr[val * 1])
+    return orderArr[val * 1]
+  }
+}
+
+var airConSrc = function(num) {
+  var urlPrefix = 'https://ym-smartspace.yunzhisheng.cn:8088/hotel/'
   // console.log('num: ', num)
-  if (num>30) {
+  if (num > 30) {
     return urlPrefix + '30.svg'
-  } else if(num>=18 && num<=30) {
+  } else if (num >= 18 && num <= 30) {
     return urlPrefix + num + '.svg'
   } else if (num < 18) {
     return urlPrefix + '0.svg'
   }
 }
 
-var airConTemp = function (num) {
+var airConTemp = function(num) {
   if (num > 30) {
     return 'H'
   } else if (num >= 18 && num <= 30) {
@@ -31,19 +62,19 @@ var airConTemp = function (num) {
   }
 }
 
-var regionFil = function (str) {
+var regionFil = function(str) {
   console.log("regionFil-str: ", str)
-  if(str != null) {
+  if (str != null) {
     return str.split(",")
   }
-  return ['湖北省','黄石市','阳新县']
+  return ['湖北省', '黄石市', '阳新县']
 }
 
 // var devSrc = function (json) {
 //   console.log('devSrc - json: ', json)
 // }
 
-var format = function (date) {
+var format = function(date) {
   console.log(date)
   return date.toLocaleString().substr(0, 10)
 }
@@ -53,7 +84,10 @@ module.exports = {
   regionFil: regionFil,
   format: format,
   airConSrc: airConSrc,
-  airConTemp: airConTemp
+  airConTemp: airConTemp,
+  ninenum_filter: ninenum_filter,
+  orderStatus: orderStatus,
+  orderFgender: orderFgender
   // devSrc: devSrc
 
 }

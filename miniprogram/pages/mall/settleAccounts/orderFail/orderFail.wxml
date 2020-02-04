@@ -1,2 +1,13 @@
 <!--miniprogram/pages/mall/settleAccounts/orderFail/orderFail.wxml-->
-<text>下单失败</text>
+<view class="container0">
+<view class="orderSuc_pic">
+    <image src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/jiesuan/icon_pay-erro.png"></image>
+    <text>下单失败</text>
+</view>
+<view class="orderFail_txt">
+     <text>失败原因：商品一售完</text>
+</view>
+<view class="orderFail_btn">
+      <button class="fail_btn">重新下单</button>
+</view>
+</view>

@@ -3,22 +3,35 @@
 .order-list {
   display: flex;
   flex-direction: row;
-  padding: 20rpx 32rpx;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 20rpx 32rpx;
+}
+.order-list-left{
+  width: calc(100% - 80px);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.order-list-right{
+  width: 80px;
+  height: 48px;
+  display: flex;
   align-items: center;
 }
 
 .order-img {
   width: 48px;
   height: 48px;
-  background: #900;
 }
 
 .title-box {
   font-size: 26rpx;
   font-weight: bold;
-  width: calc(100% - 108px);
-  box-sizing: content-box;
-  padding-left: 20rpx;
+  width: calc(100% - 50px);
+  box-sizing: border-box;
+  padding: 0 10px;
   line-height: 40rpx;
 }
 
@@ -29,7 +42,7 @@
 }
 
 .pro-price {
-  width: 30px;
+  width: 50px;
   text-align: left;
   font-size: 28rpx;
 }

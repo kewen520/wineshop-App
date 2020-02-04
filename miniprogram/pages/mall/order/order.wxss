@@ -12,6 +12,18 @@
   height: 140rpx;
   width: 100%;
   padding: 20rpx 40rpx;
+  position: absolute;
+}
+button.modify{
+  border: none;
+}
+.modify{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  bottom: 40rpx;
+  right: 60rpx;
+  background-size: 60rpx 60rpx;
 }
 
 .cupboard-name {
@@ -48,11 +60,12 @@
 .main {
   flex: 1;
   padding: 0 24rpx;
+  margin-top: 140rpx;
   overflow: hidden;
 }
 
 .order-list-box, .pay-type {
-  width: 100%;
+  width: calc(100vw - 48rpx);
   display: block;
   border-radius: 10rpx;
   background: #fff;
@@ -209,6 +222,7 @@
 .contain{
   flex: 1;
   margin-left: 20rpx;
+  text-align: right;
 }
 
 .van-dialog {

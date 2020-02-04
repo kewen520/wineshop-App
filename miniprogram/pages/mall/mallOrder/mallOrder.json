@@ -2,6 +2,8 @@
   "usingComponents": {
     "van-tab": "/dist/tab/index",
     "van-tabs": "/dist/tabs/index",
-    "y-mall-order-item": "/components/mall/order/mallOrderItem/mallOrderItem"
-  }
+    "y-mall-order-item": "/components/mall/order/mallOrderItem/mallOrderItem",
+    "y-mall-order-item-ather": "/components/mall/order/mallOrderItemAther/mallOrderItemAther"
+  },
+  "enablePullDownRefresh": true
 }

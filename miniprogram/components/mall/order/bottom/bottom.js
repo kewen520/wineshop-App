@@ -23,6 +23,9 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    submit() {
+      console.log('bottom-submit')
+      this.triggerEvent('submitOrder', {}, {})
+    }
   }
 })

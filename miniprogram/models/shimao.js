@@ -6,7 +6,7 @@ import {
 export class ShimaoModel extends HTTP {
   getHomeList() {
     return this.request({
-      url: '/member/app/homeList',
+      url: 'member/app/homeList',
       method: 'POST'
     })
   }
@@ -191,13 +191,33 @@ export class ShimaoModel extends HTTP {
     })
   }
 
-  getShopList(data) {
+  // getShopList(data) {
+  //   return this.request({
+  //     url: `${config.shop_url}`,
+  //     method: 'GET',
+  //     data
+  //   })
+  // }
+
+  // api/pms/rooms/list
+  getRoomList(data) {
+    // console.log('shimao-getShopList')
     return this.request({
-      url: `${config.shop_url}`,
-      method: 'GET',
+      url: `api/pms/rooms/list`,
+      method: 'post',
       data
     })
   }
+
+  // /api/counter/operateCounterPaySuccess
+  getCounter(data) {
+    return this.request({
+      url: `api/pms/operateCounterListByParams`,
+      method: 'post',
+      data
+    })
+  }
+
   
 }
 

@@ -1,0 +1,4 @@
+/* miniprogram/pages/djs/djs.wxss */
+.control-count-down .van-count-down{
+  color: #fff;
+}

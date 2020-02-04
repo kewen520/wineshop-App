@@ -26,6 +26,9 @@ Component({
     closeBox() {
       console.log('closeBox');
       this.triggerEvent('closeDetail', {}, {})
+    },
+    refdata() {
+      this.triggerEvent('refdata', {}, {})
     }
   }
 })

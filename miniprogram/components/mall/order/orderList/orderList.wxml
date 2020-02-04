@@ -1,0 +1,7 @@
+<!--components/mall/order/orderList/orderList.wxml-->
+<view class="mallorder_picbox" bindtap="goOrderDetail">
+  <block wx:for="{{orderGoods.goods[0].goods}}" wx:key="index">
+    <image class="orderpic" src="{{item.thumb}}"></image>
+  </block>
+  <image wx:if="{{orderGoods.goods[0].goods.length > 5}}" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_omit@2x(1).png" class="more"></image>
+</view>

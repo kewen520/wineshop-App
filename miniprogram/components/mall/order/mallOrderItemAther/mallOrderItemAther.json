@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "y-again-order-btn": "/components/mall/order/againOrderBtn/againOrderBtn",
+    "y-cance-order-btn": "/components/mall/order/canceOrderBtn/canceOrderBtn",
+    "y-count-down": "/dist/count-down/index",
+    "y-order-list": "/components/mall/order/orderList/orderList"
+  }
+}

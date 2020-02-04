@@ -4,7 +4,6 @@ button.share{
   background-color: none !important;
   background-size: 80rpx 80rpx;
   border: none;
-
 }
 .container{
   width: 100%;

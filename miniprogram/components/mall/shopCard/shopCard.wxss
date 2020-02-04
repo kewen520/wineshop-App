@@ -53,6 +53,7 @@
 .shop-describe {
   font-size: 24rpx;
   line-height: 34rpx;
+  min-height: 68rpx;
   overflow: hidden;
   color: #aaa;
   display: -webkit-box;

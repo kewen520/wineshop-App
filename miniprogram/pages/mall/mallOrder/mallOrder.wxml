@@ -1,9 +1,34 @@
 <!--miniprogram/pages/mall/mallOrder/mallOrder.wxml-->
 <van-tabs active="{{ active }}" bind:change="onChange">
   <van-tab title="全部">
-    <y-mall-order-item />
+    <block wx:for="{{orderListData}}" wx:key="index">
+      <y-mall-order-item wx:if="{{item.status == '1' || item.status == '2' || item.status == '3'}}" orderGoods="{{item}}" />
+      <!--待付款 已取消-->
+      <y-mall-order-item-ather wx:if="{{item.status == '0' || item.status == '-1'}}" orderGoods="{{item}}" />
+    </block>
   </van-tab>
-  <van-tab title="待付款">内容 2</van-tab>
-  <van-tab title="进行中">内容 3</van-tab>
-  <van-tab title="已结束">内容 4</van-tab>
+  <!--0就是待付款-->
+  <van-tab title="待付款">
+    <block wx:for="{{orderListData}}" wx:key="index">
+      <y-mall-order-item-ather orderGoods="{{item}}" />
+    </block>
+  </van-tab>
+  <!--1就是待发货-->
+  <van-tab title="待发货">
+    <block wx:for="{{orderListData}}" wx:key="index">
+      <y-mall-order-item orderGoods="{{item}}" />
+    </block>
+  </van-tab>
+  <!--2就是待收货 -->
+  <van-tab title="待收货">
+    <block wx:for="{{orderListData}}" wx:key="index">
+      <y-mall-order-item orderGoods="{{item}}" />
+    </block>
+  </van-tab>
+  <!--3就是已完成-->
+  <van-tab title="已完成">
+    <block wx:for="{{orderListData}}" wx:key="index">
+      <y-mall-order-item orderGoods="{{item}}" />
+    </block>
+  </van-tab>
 </van-tabs>

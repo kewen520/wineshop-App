@@ -33,7 +33,9 @@
     "pages/mall/shoppingCart/shoppingCart",
     "pages/mall/revAddress/revAddress",
     "pages/mall/order/order",
-    "pages/mall/mallOrder/mallOrder"
+    "pages/mall/mallOrder/mallOrder",
+    "pages/mall/mallOrder/orderDetails/orderDetails",
+    "pages/djs/djs"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -66,5 +68,8 @@
       }
     ]
   },
+  "navigateToMiniProgramAppIdList": [
+    "wx2c1b7edee14d02dd"
+  ],
   "sitemapLocation": "sitemap.json"
 }

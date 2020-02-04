@@ -6,12 +6,18 @@ Component({
   properties: {
     shopData: {
       type: Object
+    },
+    comStyle: {
+      type: Object
+    },
+    cardType: {
+      type: String
     }
   },
 
   observers: {
     shopData(obj) {
-      console.log('observers - obj: ', obj)
+      // console.log('observers - obj: ', obj)
     }
   },
 
@@ -26,6 +32,9 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    refdata() {
+      console.log('shopCard-refShopAndCartList:')
+      this.triggerEvent('refdata', {}, {})
+    }
   }
 })

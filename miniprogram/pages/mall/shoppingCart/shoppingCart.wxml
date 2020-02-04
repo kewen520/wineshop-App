@@ -1,22 +1,22 @@
 <!--miniprogram/pages/mall/shoppingCart/shoppingCart.wxml-->
 <view class="page">
-  <view class="top">
-    <y-checkbox class="all-select" value="{{ isAllSelect }}" bind:change="onAllSelect">全选</y-checkbox>
-    <text class="remove-select">删除</text>
+  <view class="top" wx:if="{{cartList.length}}">
+    <y-checkbox class="all-select" value="{{ isAllSelect }}" bind:change="onAllSelectOrNoAllSelect">全选</y-checkbox>
+    <text class="remove-select" bindtap="delCartGoods">删除</text>
   </view>
-  <scroll-view scroll-y class="main">
+  <scroll-view scroll-y class="main" wx:if="{{cartList.length}}">
     <y-checkbox-group value="{{ result }}" bind:change="onChange">
-      <block wx:for="{{16}}" wx:key="index">
+      <block wx:for="{{cartList}}" wx:key="index">
         <view class="cart-item-box">
-          <y-swipe-cell right-width="{{ 60 }}" class="shopping-cart-item">
-            <y-checkbox class="checkbox-box" name="{{item}}">
-              <shop-card class="shop-item" shopData="{{shopItem}}" data-id="{{item.id}}" />
-            </y-checkbox>
-            <view slot="right" class="remove">删除</view>
-          </y-swipe-cell>
+
+          <y-checkbox class="checkbox-box" name="{{item.id}}">
+            <shop-card cardType="cart" class="shop-item" comStyle="{{comStyle}}" shopData="{{item}}" data-id="{{item.id}}" bind:refdata="refCartList" />
+          </y-checkbox>
+
         </view>
       </block>
     </y-checkbox-group>
   </scroll-view>
-  <y-order-bottom goodsNum="{{goodsNum}}" totalPrice="{{totalPrice}}" class="y-order-bottom" />
+  <y-order-bottom wx:if="{{cartList.length}}" goodsNum="{{total}}" bind:submitOrder="submitOrder" totalPrice="{{totalprice}}" class="y-order-bottom" />
+  <text class="null-cart" wx:if="{{!cartList.length}}">购物车已清空</text>
 </view>

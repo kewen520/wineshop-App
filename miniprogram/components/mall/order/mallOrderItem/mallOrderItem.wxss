@@ -52,7 +52,6 @@
 .orderpic {
   height: 96rpx;
   width: 96rpx;
-  border: 1px solid red;
   box-sizing: content-box;
   margin-top: 24rpx;
 }
@@ -87,7 +86,7 @@
   border-top: 1rpx solid #f4f4f4;
   padding: 20rpx 32rpx;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .btn+.btn {

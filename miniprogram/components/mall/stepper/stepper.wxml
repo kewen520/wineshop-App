@@ -1,10 +1,16 @@
 <!--components/mall/stepper/stepper.wxml-->
 <view class="page">
-  <view class="sub">
-    <image class="icon-img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/home/icon_add(2).png" />
+  <view class="sub" wx:if="{{comNum>0}}" style="comNum==0'opacity:0;'">
+    <image class="icon-img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/home/icon_add(2).png"
+    data-type="reduce"
+    catchtap="addOrReduce"
+    />
   </view>
-  <text class="shop-num">100</text>
+  <view class="sub" wx:else></view>
+  <text class="shop-num">{{comNum>0?comNum:''}}</text>
   <view class="add">
-    <image class="icon-img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/home/icon_add(1).png" />
+    <image class="icon-img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/home/icon_add(1).png" 
+    data-type="add"
+    catchtap="addOrReduce"/>
   </view>
 </view>

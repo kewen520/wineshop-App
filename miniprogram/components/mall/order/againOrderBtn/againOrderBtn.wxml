@@ -1,0 +1,2 @@
+<!--components/mall/order/againOrderBtn/againOrderBtn.wxml-->
+<view class="btn again" bindtap="handleBtn">{{btnType=='again'?'再来一单':'继续支付'}}</view>

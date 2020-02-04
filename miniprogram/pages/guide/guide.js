@@ -165,6 +165,7 @@ Page({
               // console.log('res.data.data.token.token: ', res.data.data.token.token)
               if (res.data.data){       
                 let token = res.data.data.token.token
+                wx.setStorageSync('openId', res.data.data.member.party.openid)
                 wx.setStorageSync('token', res.data.data.token.token)
                 // return
                 if (token) {

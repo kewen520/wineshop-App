@@ -1,0 +1,8 @@
+<!--miniprogram/pages/djs/djs.wxml-->
+<y-count-down
+  class="control-count-down"
+  millisecond
+  time="{{ time }}"
+  format="{{time > 60 * 1000 ? 'mm 分' : 'ss 秒'}}"
+  bind:finish="finished"
+/>

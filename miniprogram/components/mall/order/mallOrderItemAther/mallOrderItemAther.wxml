@@ -1,0 +1,40 @@
+<!--components/mall/order/mallOrderItem/mallOrderItem.wxml-->
+<wxs src="../../../../util/filter.wxs" module="util" />
+<view class="page">
+  <view class="mallorder_box">
+    <view class="mallorder_list">
+      <text class="mall_tit">{{comOrderGoods.merchname}}</text>
+      <text wx:if="{{comOrderGoods.status==0 && !timeout}}" class="mall_tit_pay">待付款</text>      
+      <text wx:if="{{comOrderGoods.status==0 && timeout}}" class="mall_tit_pay">已取消</text>
+      <text wx:if="{{comOrderGoods.status==-1}}" class="mall_tit_pay" style="color: #BDBEC0;">{{util.orderStatus(comOrderGoods.status)}}</text>
+    </view>    
+    <y-order-list orderGoods="{{comOrderGoods}}"/>
+    <view class="mallorder_info">
+      <view class="info_list">
+        <text>订单编号</text>
+        <text>{{comOrderGoods.ordersn}}</text>
+      </view>
+      <view class="info_list">
+        <text>下单时间</text>
+        <text>{{comOrderGoods.time}}</text>
+      </view>
+      <view class="info_list" wx:if="{{comOrderGoods.status==0 && !timeout}}">
+        <view class="info_num">订单将于
+          <y-count-down class="control-count-down" millisecond time="{{ residue }}" format="{{residue > 60 * 1000 ? 'mm 分' : 'ss 秒'}}" bind:finish="finished" />后自动取消</view>
+      </view>
+      <view class="info_list" wx:else>
+        <text>取消原因</text>
+        <text wx:if="{{comOrderGoods.status==0 && timeout}}">超时未支付，已取消</text>
+        <text wx:if="{{comOrderGoods.status==-1}}">已取消</text>
+      </view>
+    </view>
+    <!--待付款-->
+    <view class="info_btnbox" wx:if="{{comOrderGoods.status==0 && !timeout}}">
+      <y-cance-order-btn  orderGoods="{{comOrderGoods}}" bind:CanceledOrder = "CanceledOrder"/>
+      <y-again-order-btn btnType="continue" orderGoods="{{comOrderGoods.goods[0].goods}}"/>
+    </view>
+    <view class="info_btnbox" style="justify-content: flex-end;" wx:else>
+      <y-again-order-btn btnType="again" orderGoods="{{comOrderGoods.goods[0].goods}}"/>
+    </view>    
+  </view>
+</view>

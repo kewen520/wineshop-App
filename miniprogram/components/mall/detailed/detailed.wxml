@@ -2,17 +2,17 @@
 <view class="page" catch:touchmove="stopMove">
   <view class="main">
     <image class="close-box" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/home/icon_close@2x(1).png" bindtap="closeBox" />
-    <view class="main-img"></view>
+    <image class="main-img" src="{{shopdetail.thumb}}" />
     <view class="contain">
       <scroll-view class="shop-info" scroll-y>
-        <text class="tit">{{shopdetail.shopname}}</text>
-        <text class="describe">红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。红豆填入麻薯吐司，内陷饱满可口，一包10片装。</text>
+        <text class="tit">{{shopdetail.title}}</text>
+        <text class="describe">{{shopdetail.subtitle}}</text>
       </scroll-view> 
       <view class="operate-box">
         <price-box prePri="25" oriPri="40" />
-        <y-stepper class="stepper" />
+        <y-stepper cardid="{{shopdetail.cartId}}" class="stepper" num="{{shopdetail.currentBuyTotal}}" goodsid="{{shopdetail.id}}" bind:refdata="refdata" />
       </view>     
-      <button class="btn" hover-class="hover-class" hover-stay-time="70">加入购物车</button>
+      <button class="btn" hover-class="hover-class" bindtap="closeBox" hover-stay-time="70">加入购物车</button>
     </view>
   </view>
 </view>

@@ -1,4 +1,5 @@
 <!--miniprogram/pages/mall/index/index.wxml-->
+<wxs src="../../../util/filter.wxs" module="util" />
 <view class="page">
   <view class="top">
     <view class="counter-name">
@@ -6,20 +7,20 @@
       <text class="counter-name-txt">新研大厦4号货柜</text>
     </view>
     <view class="shopping-cart">
-      <view class="cart-num">99</view>
+      <view class="cart-num" wx-if="{{cartTotal}}" bindtap="goShoppingCart">{{util.ninenum_filter(cartTotal)}}</view>
       <image class="shopping-cart-img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/home/icon_shopping-cart.png" />
     </view>
   </view>
   <view class="mall-main">
     <scroll-view class="menu" scroll-y='true'>
-      <view class="menu-item {{index==TabCur?'active':''}}" wx:for="{{productCategory}}" wx:key="index" bindtap="onChange">{{item}}</view>
+      <view class="menu-item {{index==TabCur?'active':''}}" wx:for="{{productCategory}}" wx:key="index" data-index="{{index}}" bindtap="onChange">{{item}}</view>
     </scroll-view>
 
     <scroll-view class="shop-box" scroll-y='true'>
       <block wx:for="{{shopList}}" wx:key="index">
-        <shop-card shopData="{{item}}" data-id="{{item.id}}" bindtap="openDetail" class="shop-item" />
+        <shop-card shopData="{{item}}" data-shopdata="{{item}}" bindtap="openDetail" class="shop-item" bind:refdata="refShopAndCartList" />
       </block>
     </scroll-view>
   </view>
-  <shop-detailed wx:if="{{isShowDetail}}" shopdetail="{{shopdetail}}" bind:closeDetail="closeDetail" />
+  <shop-detailed wx:if="{{isShowDetail}}" shopSubtitle="{{}}" shopdetail="{{shopdetail}}" bind:closeDetail="closeDetail" bind:refdata="refShopAndCartList" />
 </view>

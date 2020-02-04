@@ -1,0 +1,67 @@
+<!--miniprogram/pages/mall/order/order.wxml-->
+<wxs src="../../../../util/filter.wxs" module="util" />
+<view class="page">
+  <view class="order-details-top">
+    <text wx:if="{{orderDetails.order.status == '0' && timeout}}" class="order-status">已取消</text>
+    <text wx:else class="order-status">{{util.orderStatus(orderDetails.order.status)}}</text>
+    <text wx:if="{{orderDetails.order.status != '0' && orderDetails.order.status != '-1'}}" class="pick-code">取货码:{{orderDetails.order.pickUpCode}}</text>
+  </view>
+  <view class="countdown_box" wx:if="{{!timeout}}">
+    <text class="down-txt">订单将于</text>
+    <y-count-down class="control-count-down" millisecond time="{{ residue }}" format="{{residue > 60 * 1000 ? 'mm 分' : 'ss 秒'}}" bind:finish="finished" />
+    <text>后自动取消</text>
+  </view>
+  <view class="pay-type m-b-40" style="padding: 20rpx 0;">
+    <view class="pay_list no-border">
+      <text>订单编号</text>
+      <text>{{orderDetails.order.ordersn}}</text>
+    </view>
+    <view class="pay_list no-border">
+      <text class="label">下单时间</text>
+      <text class="contain">{{orderDetails.order.createtime}}</text>
+    </view>
+    <view class="pay_list no-border">
+      <text class="label">收货地址</text>
+      <text class="contain">{{hotelName}}{{orderDetails.carrier.roomNum || roomNum}}房间</text>
+    </view>
+    <view class="pay_list no-border">
+      <text class="label"></text>
+      <text class="contain">{{orderDetails.carrier.carrier_realname}}（{{util.orderFgender(orderDetails.carrier.gender)}}）{{orderDetails.carrier.carrier_mobile || 18612345678}}</text>
+    </view>
+  </view>
+  <view class="order-list-box">
+    <view class="order-list-top">
+      <text class="order-tit">订单明细</text>
+      <text class="robot-box">机器人送货</text>
+    </view>
+    <block wx:for="{{orderDetails.goods}}" wx:key="index">
+      <y-order-item orderGoods="{{item}}" />
+    </block>
+    <view class="pay_list">
+      <text>总数： {{totalNum}}</text>
+      <text>总价： {{orderDetails.order.price}}</text>
+    </view>
+    <view class="info_btnbox" wx:if="{{timeout}}">
+      <y-again-order-btn class="btn-box" btnType="again" orderGoods="{{orderDetails.goods}}" />
+    </view>
+    <view class="info_btnbox" wx:else>
+      <y-cance-order-btn class="btn-box" orderGoods="{{orderDetails.order}}" bind:CanceledOrder = "CanceledOrder"/>
+      <y-again-order-btn class="btn-box" btnType="continue" orderGoods="{{orderDetails.goods}}"/>
+    </view>
+  </view>
+
+  <!-- pay Type支付方式 -->
+  <view class="pay-type">
+    <view class="pay_list">
+      <text>支付方式</text>
+      <text>微信支付</text>
+    </view>
+    <view class="pay_list" bindtap="commentsHandle">
+      <text class="label">订单备注</text>
+      <text class="contain">{{commentsValue}}</text>
+    </view>
+
+  </view>
+
+
+</view>

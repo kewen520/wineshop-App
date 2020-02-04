@@ -1,6 +1,6 @@
 export const config = {
   api_base_url: 'http://bl.7yue.pro/v1/',
-  shimao1: 'https://pre-api.shimaoiot.com/',
+  // shimao1: 'https://pre-api.shimaoiot.com/',
   api_base_url_cj: 'https://route.igaicloud.cn/house/wx/mini/',
   app_url: 'https://api.shimaoiot.com',  
   shimao_url: 'https://pre-api.shimaoiot.com/',
@@ -8,6 +8,7 @@ export const config = {
   mall_url:'https://shopping.shimaoiot.com/',
   appkey: 'RdshydjBvcYZhMZC',
   appId: 'wx64eb9e2828c2b180',
+  openId: 'o0qqL5e3eNhnHCNidf60RjAxQEvg',
   visitorToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxOSIsImlzcyI6ImF1dGgwIiwiZXhwIjoxNTc1MTA3OTc2LCJ1c2VySWQiOjE5fQ.VOIw8AZ7sF65uNIHRQ00zgUln7VKFrvIEJe91rk44GI',
   visitorSpaceId: 580,
   visitorHotelId: 'cda49783d8f24561aa8abfd42d5c4edf',

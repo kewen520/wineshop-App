@@ -80,10 +80,11 @@
   height: 50px;
   line-height: 50px;
   position: relative;
-  color: #fff;
+  color: rgba(255, 255, 255, .5);
 }
 .menu-item.active {
   background-color: #242631;
+  color: #fff !important;
 }
 
 .shop-box {

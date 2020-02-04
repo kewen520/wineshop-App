@@ -216,13 +216,6 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/mall/index/index",
-					"pathName": "pages/mall/index/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
 					"name": "详情",
 					"pathName": "pages/mall/detailed/detailed",
 					"query": "",
@@ -236,13 +229,6 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "商城首页",
-					"pathName": "pages/mall/home/home",
-					"query": "",
-					"scene": null
-				},
-				{
 					"id": 28,
 					"name": "购物车",
 					"pathName": "pages/mall/shoppingCart/shoppingCart",
@@ -250,10 +236,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 27,
 					"name": "订单",
 					"pathName": "pages/mall/order/order",
-					"query": "",
+					"query": "id=1830",
 					"scene": null
 				},
 				{
@@ -264,10 +250,38 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 29,
 					"name": "修改地址",
 					"pathName": "pages/mall/revAddress/revAddress",
+					"query": "id=1829",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "支付成功",
+					"pathName": "pages/mall/settleAccounts/orderSuc/orderSuc",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": 31,
+					"name": "失败",
+					"pathName": "pages/mall/settleAccounts/orderFail/orderFail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 32,
+					"name": "订单详情",
+					"pathName": "pages/mall/mallOrder/orderDetails/orderDetails",
+					"query": "id=1813",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/djs/djs",
+					"pathName": "pages/djs/djs",
+					"query": "id=1637",
 					"scene": null
 				}
 			]

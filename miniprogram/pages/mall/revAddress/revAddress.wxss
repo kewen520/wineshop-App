@@ -55,3 +55,6 @@
 .picker-box{
   flex: 1;
 }
+.btn.hover-class{
+  opacity: .6
+}

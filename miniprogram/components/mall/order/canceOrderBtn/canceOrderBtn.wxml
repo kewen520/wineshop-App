@@ -1,0 +1,2 @@
+<!--components/mall/order/againOrderBtn/againOrderBtn.wxml-->
+<view class="btn again" bindtap="handleBtn">取消订单</view>

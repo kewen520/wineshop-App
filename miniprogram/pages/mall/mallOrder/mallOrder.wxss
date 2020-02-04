@@ -3,7 +3,10 @@
 .van-tab__pane {
   padding: 24rpx;
 }
-
+.van-count-down{
+  display: inline-block !important;
+  color: #ffa364 !important;
+}
 .van-hairline--top-bottom:after {
   border-width: 0 0 !important;
 }

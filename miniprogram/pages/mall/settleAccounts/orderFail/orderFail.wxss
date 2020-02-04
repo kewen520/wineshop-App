@@ -1,1 +1,14 @@
 /* miniprogram/pages/mall/settleAccounts/orderFail/orderFail.wxss */
+.container0{ display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.orderSuc_pic{ margin-top: 145rpx; }
+.orderSuc_pic image{ width: 140rpx; height: 140rpx; border:1rpx dashed #5D6268; display: flex; margin-bottom: 30rpx;}
+.orderSuc_pic text{text-align: center; font-size: 32rpx; color: #fff;}
+
+
+
+.orderFail_txt{ color: #A5A6A8; margin-top: 36rpx; font-size: 28rpx;}
+.orderFail_btn{ margin-top: 50rpx;}
+.fail_btn{ background:none; border: 1px solid #5D6268; border-radius: 5px; width: 300rpx; height: 88rpx; color: #fff; font-size: 27rpx;}
+
+
+

@@ -4,7 +4,9 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    orderGoods: {
+      type: Object
+    }
   },
 
   /**
@@ -12,6 +14,10 @@ Component({
    */
   data: {
 
+  },
+
+  attached () {
+    console.log('orderGoods: ', this.data.orderGoods)
   },
 
   /**

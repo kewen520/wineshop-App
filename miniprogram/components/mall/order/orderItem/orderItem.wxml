@@ -1,7 +1,15 @@
 <!--components/mall/order/orderItem/orderItem.wxml-->
 <view class="order-list">
-  <image class="order-img" />
-  <view class="title-box">红豆麻薯千层抹茶吐司红豆麻薯千层抹茶吐司</view>
-  <text class="order-num">× 5</text>
-  <text class="pro-price">￥50</text>
+  <view class="order-list-left">
+    <image class="order-img" src="{{orderGoods.thumb}}" />
+    <view class="title-box">{{orderGoods.title}}</view>
+  </view>
+  <view class="order-list-right">
+    <text class="order-num">× {{orderGoods.total}}</text>
+    <text class="pro-price">￥{{orderGoods.price*1}}</text>
+  </view>
+  <!-- <image class="order-img" src="{{orderGoods.thumb}}" />
+  <view class="title-box">{{orderGoods.title}}</view>
+  <text class="order-num">× {{orderGoods.total}}</text>
+  <text class="pro-price">￥{{orderGoods.price*1}}</text> -->
 </view>

@@ -113,8 +113,87 @@ const utils = {
         }
       })
     });
-  }
+  },
 
+  /*数据结构化*/
+  /**
+   * 将一维的扁平数组转换为多层级对象
+   * @param  {[type]} list 一维数组，数组中每一个元素需包含id和parent_id两个属性 
+   * @return {[type]} tree 多层级树状结构
+   */
+  buildTree(list) {
+    // console.log('list: ', list)
+    const tmp = new Map();
+    const categoryArr = list.filter(item => {
+      return !tmp.has(item.category_shop.name) && tmp.set(item.category_shop.name, 1);
+    })
+    let categor = []
+    categoryArr.forEach(item => {
+      categor.push(item.category_shop.name)
+    })
+    console.log('categor: ', categor)
+    let res = []
+    categor.forEach(item => {
+      let resItemObj = {
+        categorName: item,
+        childList: []
+      }
+      list.forEach(o => {
+        if (o.category_shop.name == item) {
+          resItemObj.childList.push(o)
+        }
+      })
+      res.push(resItemObj)
+    })
+    return res
+  },
+
+  dateFormat(date, fmt) {
+    date = new Date(date * 1000);
+    let ret;
+    let opt = {
+      "Y+": date.getFullYear().toString(), // 年
+      "m+": (date.getMonth() + 1).toString(), // 月
+      "d+": date.getDate().toString(), // 日
+      "H+": date.getHours().toString(), // 时
+      "M+": date.getMinutes().toString(), // 分
+      "S+": date.getSeconds().toString() // 秒
+      // 有其他格式化字符需求可以继续添加，必须转化成字符串
+    };
+    console.log('opt: ', opt);
+    for (let k in opt) {
+      ret = new RegExp("(" + k + ")").exec(fmt);
+      if (ret) {
+        fmt = fmt.replace(
+          ret[1],
+          ret[1].length == 1 ? opt[k] : opt[k].padStart(ret[1].length, "0")
+        );
+      }
+    }
+    return fmt;
+  },
+
+  // 时间距离
+  formatRemainTime(endTime) {
+    var startDate = new Date(); //开始时间
+    var endDate = new Date(endTime); //结束时间
+    var t = endDate.getTime() - startDate.getTime(); //时间差
+    var d = 0,
+      h = 0,
+      m = 0,
+      s = 0;
+    if (t >= 0) {
+      d = Math.floor(t / 1000 / 3600 / 24);
+      h = Math.floor(t / 1000 / 60 / 60 % 24);
+      m = Math.floor(t / 1000 / 60 % 60);
+      s = Math.floor(t / 1000 % 60);
+    }
+    if (m > 0) {
+      return m + "分钟 ";
+    } else {
+      return s + "秒";
+    }
+  }
 
 }
 

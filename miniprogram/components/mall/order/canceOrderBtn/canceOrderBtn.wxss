@@ -1,0 +1,19 @@
+/* components/mall/order/againOrderBtn/againOrderBtn.wxss */
+
+
+.btn {
+  font-size: 27rpx;
+  width: 160rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: center;
+}
+
+.again {
+  color: #A5A6A8;
+  border: 1rpx solid #A5A6A8;
+  background: #fff;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+  margin-left: auto;
+}

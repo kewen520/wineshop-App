@@ -59,10 +59,12 @@
 
 .checkbox-box {
   height: 220rpx;
-  width: calc(100vw - 80rpx);
   box-sizing: border-box;
   padding: 0 20rpx 0 40rpx;
   display: flex;
+}
+.van-checkbox{
+  width: 100%;
 }
 
 .van-checkbox__label {
@@ -100,5 +102,16 @@
 }
 
 .shop-item {
-  height: 220rpx;
+  height: 220rpx;  
+  width: 100%;
+}
+
+.null-cart{
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 100%;
+  font-size: 30rpx;
+  text-align: center;
+  color: #fff;
+  margin-top: 100rpx;
 }

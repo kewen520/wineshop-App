@@ -5,7 +5,7 @@
     <text class="tit">{{tit}}</text>
     <text class="info">{{info}}</text>
     <!-- <button class='btn_yzm' type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" bindtap="primary"> 授权登录 </button> -->
-    <button wx:if="{{isRegister}}" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">授权-{{regEncryptedData}}</button>
+    <button wx:if="{{!isRegister}}" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">授权-{{regEncryptedData}}</button>
     <button class="cu-btn bg-white lg" role="button" aria-disabled="false" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" >进入首页</button>
     <text class="info">{{copyright}}</text>  
   </view>

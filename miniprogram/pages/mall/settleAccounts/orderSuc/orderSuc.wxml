@@ -1,2 +1,24 @@
 <!--miniprogram/pages/mall/settleAccounts/checkoutSuc.wxml-->
-<text>下单成功</text>
+<view class="container0">
+  <view class="orderSuc_pic">
+    <image src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/mall/jiesuan/icon_pay-succeed.png"></image>
+    <text>支付成功</text>
+  </view>
+  <view class="orderSuc_thm" wx:if="{{orderStatus == 0}}">
+    <text class="order_txt1">取货码获取中</text>
+    <image class="order_txt2_img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_loading.png" />
+  </view>
+  <view class="orderSuc_thm" wx:if="{{orderStatus == 1}}">
+    <text class="order_txt1">取货码</text>
+    <text class="order_txt2">{{codeNum}}</text>
+  </view>
+  <view class="orderSuc_thm" wx:if="{{orderStatus == 2}}" bindtap="setTimer">
+    <text class="order_txt1" class="{{orderStatus == 2?'danger_txt1':''}}">取货码获取失败！请重试</text>
+    <image class="order_txt3_img" src="https://ym-smartspace.yunzhisheng.cn:8088/hotel/icon_refresh.png" />
+  </view>
+  <view class="orderSuc_xq" bindtap="toMallOrder">
+    <text>订单详情 {{step}} >></text>
+  </view>
+
+
+</view>

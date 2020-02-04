@@ -31,6 +31,7 @@
   position: absolute;
   right: 24rpx;
   top: 24rpx;
+  z-index: 20;
 }
 
 .main-img {

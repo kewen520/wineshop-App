@@ -3,32 +3,33 @@
   <view class="main">
     <view class="form-group">
       <text class="label">联系人</text>
-      <input class="inp" value="{{userName}}" />
+      <input class="inp" value="{{name}}" bindinput="getName" />
     </view>
     <view class="form-group">
       <text class="label">性别</text>
-      <van-radio-group class="radio-group" value="{{ radio }}" bind:change="onChange">
-        <van-radio name="1">先生</van-radio>
-        <van-radio name="2">女士</van-radio>
+      <van-radio-group class="radio-group" value="{{ gender }}" bind:change="onChange">
+        <van-radio name="0">先生</van-radio>
+        <van-radio name="1">女士</van-radio>
       </van-radio-group>
     </view>
     <view class="form-group">
       <text class="label">手机号</text>
-      <input class="inp" value="{{userPhone}}" />
+      <input class="inp" type="number" maxlength="11" value="{{mobile}}" bindinput="getMobile" />
     </view>
     <view class="form-group">
       <text class="label">酒店名</text>
-      <text>{{wineshopName}}</text>
+      <text>{{hotelName}}</text>
     </view>
     <view class="form-group">
       <text class="label">楼栋和房间号</text>
-      <picker class="picker-box" bindchange="roomNumChange" value="{{index}}" range="{{picker}}">
+      <picker class="picker-box" bindchange="roomNumChange" value="{{index}}" range="{{roomList}}">
         <view class="picker">
-          {{index?picker[index]:'请选择楼栋和房间号'}}
+          {{index!=-1?roomList[index]:'请选择楼栋和房间号'}}
         </view>
       </picker>
     </view>
   </view>
 
-  <view class="btn">保存</view>
+  <view class="btn" hover-class="hover-class"
+  hover-stay-time="70" bindtap="submit">保存</view>
 </view>
